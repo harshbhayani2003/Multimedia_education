@@ -1,0 +1,558 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-color: rgb(224, 226, 226);
+}
+
+.header {
+    background-color: red;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#city {
+    height: 4vh;
+    border-radius: 0.5vh;
+    background: transparent;
+    color: white;
+    margin-left: 10vh;
+    border: 0.3vh solid white
+}
+
+#lan {
+    height: 4vh;
+    border-radius: 0.5vh;
+    margin-left: 1vh;
+    background: transparent;
+    color: white;
+    border: 0.3vh solid white
+}
+
+.header option {
+    color: black;
+}
+
+.header marquee {
+    display: flex;
+    margin-left: 60vh;
+    color: white;
+    margin-right: 10vh;
+}
+
+/* -------------------------side-Navigation-bar-------------------------------- */
+.hamburger {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #efeaea;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+    display: none;
+}
+
+.menu a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* .menu a:hover {
+    background-color: #575757;
+} */
+.content {
+    padding: 60px 20px;
+    margin-top: 60px;
+    /* Space for the fixed header */
+}
+
+#menu-toggle:checked+.menu {
+    width: 250px;
+    display: block;
+}
+
+.std {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.c {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+    /* display: flex; */
+}
+
+.coursenav {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.navaboutas {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.group {
+    display: none;
+    z-index: 40;
+    /* padding: 5vh 0vh 5vh 0vh; */
+}
+
+.navstudent {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.sidestd {
+    display: none;
+    z-index: 40;
+}
+
+.sidec {
+    display: none;
+    z-index: 40;
+}
+
+.sidecoursenav {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavaboutas {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavstudent {
+    display: none;
+    z-index: 40;
+}
+
+.sidegroup {
+    display: none;
+    z-index: 41;
+}
+
+/* -----------------------------------------------------------navigation-bar------------------------------------------------- */
+.nav1 {
+    display: flex;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+}
+
+.l2 {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    padding-right: 20vh;
+}
+
+.nav1 a {
+    margin-left: 5vh;
+    color: black;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav1 img {
+    height: 8vh;
+    width: 25vh;
+    margin-left: 10vh;
+}
+
+.career h3 {
+    padding-bottom: 1vh;
+    border-bottom: 0.2vh dashed black;
+}
+
+.img {
+    height: 80vh;
+    width: auto;
+    background: black;
+    animation-name: img;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.l ul li a:hover {
+    color: red;
+}
+
+#std:hover .std {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 100vh;
+    background-color: white;
+}
+
+#c:hover .c {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    display: flex;
+}
+
+#coursenav:hover .coursenav {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 10vh;
+    background-color: white;
+    display: flex;
+}
+
+#navaboutas:hover .navaboutas {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    /* width: 50vh; */
+    /* border: 1px solid black; */
+}
+
+#group:hover .group {
+    display: block;
+    position: absolute;
+    width: 40vh;
+    top: 6vh;
+    right: 35vh;
+    background-color: white;
+}
+
+#navstudent:hover .navstudent {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 30vh;
+    background-color: white;
+}
+
+#sidestd:hover .sidestd {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    /* overflow-y: scroll; */
+    background-color: white;
+}
+
+#sidec:hover .sidec {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidecoursenav:hover .sidecoursenav {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavaboutas:hover .sidenavaboutas {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavstudent:hover .sidenavstudent {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidegroup:hover .sidegroup {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.menu>ul {
+    list-style: none;
+}
+
+.menu a {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+/* ---------------------------------------------------------start----------------------------------------------- */
+.start {
+    text-align: center;
+    height: 40vh;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    background-image: radial-gradient(rgba(2, 2, 2, 0.295), rgba(8, 8, 8, 0.666) 75%), url("/img/Contact us/contact-bg.jpeg");
+}
+
+.start>h1 {
+    margin-top: 10vh;
+    color: white;
+    font-weight: 400;
+}
+
+.start>span {
+    color: white;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------from----------------------------------------------- */
+.bookdemo {
+    margin: 8vh 15%;
+    width: 70%;
+    height: auto;
+    border-radius: 1vh;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 3vh 0vh;
+}
+
+.bookdemo .txtbox {
+    border: 0.2vh solid rgba(128, 128, 128, 0.607);
+    border-radius: 1vh;
+    padding: 2vh 3vh;
+    margin-top: 2vh;
+    width: 90%;
+    font-size: 2vh;
+    font-weight: lighter;
+    background-color: rgb(243, 243, 243);
+}
+
+.captcha {
+    border: 0.2vh solid rgba(128, 128, 128, 0.607);
+    border-radius: 1vh;
+    padding: 2vh 0vh 2vh 3vh;
+    margin: 2vh 5%;
+    width: 20%;
+    font-size: 2vh;
+    font-weight: lighter;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.captchaimg {
+    margin-left: 10%;
+    height: 5vh;
+    width: 5vh;
+}
+
+.btnsubmit {
+    background-color: red;
+    border-radius: 1vh;
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    padding: 1.5vh;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+.opportunities {
+    margin: 3vh 10%;
+}
+
+.opportunities>h3 {
+    text-align: center;
+}
+
+.opbtn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#opbtn {
+    width: 21%;
+    margin: 2%;
+    padding: 2vh 2vh;
+    border: none;
+    background-color: rgba(169, 169, 169, 0.195);
+    border-radius: 1vh;
+}
+
+#opbtn img {
+    height: 5vh;
+    width: 5vh;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+.our {
+    margin: 3vh 5%;
+}
+
+.our>h1 {
+    text-align: center;
+}
+.location{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#location {
+    border: 1px solid rgba(128, 128, 128, 0.474);
+    border-radius: 1vh;
+    height: auto;
+  max-width: 30.2%;
+    margin:1vh;
+    color: rgba(8, 3, 90, 0.685);
+}
+
+#location ul li>p {
+    margin: 1vh 2vh;
+    color: rgba(68, 68, 68, 0.681);
+    font-size: 2vh;
+    color: rgba(8, 3, 90, 0.685);
+
+}
+#location ul li{
+    font-size: 2.5vh;
+}
+#location ul li>label {
+    font-weight: 500;
+    font-size: 3vh;
+}
+
+#location ul li>span {
+    margin-top: 5vh;
+    font-weight: 200;
+    font-size: 2vh;
+}
+#locationbtn{
+    padding: 1vh 2vh;
+    background-color: rgb(26, 26, 80);
+    color: white;
+    margin-top: 2vh;
+}
+#location ul {
+    text-align: center;
+    list-style: none;
+    padding: 0vh;
+}
+#location img {
+    border-radius: 1vh;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+/* ------------------------------------------------Available------------------------------------------------------- */
+.available{
+    text-align: center;
+    padding: 2vh;
+    margin: 3vh 8%;
+    border-radius: 1vh;
+    background-color: rgba(144, 219, 245, 0.219);
+}
+#available{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.btnavl{
+    width: 30%;
+    padding: 1vh 10%;
+    margin: 2vh;
+    border: none;
+    font-size: 3vh;
+    border-radius: 1vh;
+    background-color: white;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    height: 4vh;
+    width: auto;
+    margin: 0.5vh;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 5vh 10vh 5vh 5vh;
+}
+
+.footer li {
+    padding: 0.5vh;
+    display: flex;
+}
+
+.footer h2 {
+    padding: 2vh 0vh;
+}
+
+.last {
+    background-color: rgb(10, 10, 10);
+    height: 8vh;
+    display: flex;
+    padding: 3vh 10vh;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.last h4 {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+/* -------------------------------------------------------- Media Query--------------------- */
+@media screen and (max-width : 1250px) {
+    .l {
+        display: none;
+    }
+
+    /* .menu{
+        display: block;
+    } */
+    /* .course1{
+        display: block;
+    } */
+    .hamburger {
+        display: block;
+    }
+}

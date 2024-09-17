@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: red;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+}
+::selection{
+    color: white;
+    background-color: gray;
+}
+
+
+#city {
+    height: 4vh;
+    border-radius: 0.5vh;
+    background: transparent;
+    color: white;
+    margin-left: 10vh;
+    border: 0.3vh solid white
+}
+
+#lan {
+    height: 4vh;
+    border-radius: 0.5vh;
+    margin-left: 1vh;
+    background: transparent;
+    color: white;
+    border: 0.3vh solid white;
+}
+
+.header option {
+    color: black;
+}
+
+.header marquee {
+    display: flex;
+    margin-left: 60vh;
+    color: white;
+    margin-right: 10vh;
+}
+
+/* -------------------------Navigation-bar-------------------------------- */
+
+.hamburger {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+.menu {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #efeaea;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+    display:none;
+}
+.menu a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+/* .menu a:hover {
+    background-color: #575757;
+} */
+.content {
+    padding: 60px 20px;
+    margin-top: 60px; /* Space for the fixed header */
+}
+#menu-toggle:checked + .menu {
+    width: 250px;
+    display: block;
+}
+.std{
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+.c{
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+    /* display: flex; */
+}
+.coursenav{
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+.navaboutas{
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+.group{
+    display: none;
+    z-index: 40;
+    /* padding: 5vh 0vh 5vh 0vh; */
+} 
+.navstudent{
+    display:  none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+.sidestd{
+    display:  none;
+    z-index: 40;
+}
+.sidec{
+    display:  none;
+    z-index: 40;
+}
+.sidecoursenav{
+    display: none;
+    z-index: 40;
+}
+.sidenavaboutas{
+    display: none;
+    z-index: 40;
+}
+.sidenavstudent{
+    display: none;
+    z-index: 40;
+}.sidegroup{
+    display: none;
+    z-index: 41;
+}
+/* -----------------------------------------------------------navigation-bar------------------------------------------------- */
+.nav1 {
+    display: flex;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+}
+
+.l2 {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    padding-right:20vh;
+}
+
+.nav1 a {
+    margin-left: 5vh;
+    color: black;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav1 img {
+    height: 8vh;
+    width: 25vh;
+    margin-left: 10vh;
+}
+.career h3{
+    padding-bottom: 1vh;
+    border-bottom: 0.2vh dashed black;
+}
+
+.img {
+    height: 80vh;
+    width: auto;
+    background: black;
+    animation-name: img;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.l ul li a:hover{
+    color: red;
+}
+#std:hover .std{
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 100vh;
+    background-color: white;
+}
+#c:hover .c{
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    display: flex;
+}
+#coursenav:hover .coursenav{
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 10vh;
+    background-color: white;
+    display: flex;
+}
+#navaboutas:hover .navaboutas{
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    /* width: 50vh; */
+    /* border: 1px solid black; */
+}
+#group:hover .group{
+    display: block;
+    position: absolute;
+    width: 40vh;
+    top: 6vh;
+    right: 35vh;
+    background-color: white;
+}
+#navstudent:hover .navstudent{
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 30vh;
+    background-color: white;
+}
+#sidestd:hover .sidestd{
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    /* overflow-y: scroll; */
+    background-color: white;
+}
+#sidec:hover .sidec{
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+#sidecoursenav:hover .sidecoursenav{
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+#sidenavaboutas:hover .sidenavaboutas{
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+#sidenavstudent:hover .sidenavstudent{
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+#sidegroup:hover .sidegroup{
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+.menu > ul {
+    list-style: none;
+}
+.menu a{
+    margin: 1vh;
+    padding: 1vh;
+}
+
+
+/* --------------------------------------------Image----------------------------- */
+.slider {
+    margin-top: 5vh;
+}
+
+.slide1 {
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 4vh 0vh 8vh 18vh;
+}
+
+.counter {
+    height: 25%;
+    width: 100%;
+    background-color: #384b70;
+}
+
+/* --------------------------------------------Counter-------------------------------------- */
+/* .con {
+    background-color: rgb(89, 89, 179);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5%;
+}
+
+.con ul {
+    list-style: none;
+
+}
+
+.con i {
+    margin-top: 5vh;
+}
+
+.con .img2 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+
+} */
+/* .img10{
+    margin-bottom: 2vh;
+    padding-bottom: 4vh;
+    display: inline-block;
+} */
+.con {
+    height: 100%;
+    /* width: 90%;
+    margin: 5%; */
+    background-color: #02395A;
+    /* border-radius: 1vh; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.con_img {
+    height: 25vh;
+    width: 25vh;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ab {
+    font-size: 2.5vh;
+}
+
+.img2 img {
+    height: 10vh;
+    width: 10vh;
+}
+
+.con li {
+    list-style: none;
+}
+/* .sectsection1{
+    width: 100%;
+} */
+
+
+.imeg {
+    /* display: flex; */
+    padding-left: 8%;
+    margin-top: 1vh;
+}
+
+/* .ab2{
+    margin-top: 1vh;
+} */
+.ba2 {
+    margin-bottom: 5vh;
+}
+
+.imeg1 {
+    margin-right: 8vh;
+}
+
+.con li {
+    color: white;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+    text-align: center;
+}
+
+.con .ab {
+    color: rgb(175, 175, 231);
+    font-size: 2.5vh;
+}
+
+.employebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+
+}
+
+
+.employestaff {
+    height: auto;
+    /* width: 89%; */
+    width: auto;
+    margin-left: 6%;
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.employestaff1 {
+    height: auto;
+    /* width: 89%; */
+    width: auto;
+    margin-left: 6%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+/* .content {
+    display: none; 
+  } */
+
+.stud1 {
+    height: 33vh;
+    width: 40vh;
+    background-color: rgba(212, 207, 207, 0.158);
+    /* background-color: aqua; */
+    border-radius: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    /* flex-basis: 200; */
+}
+
+.stud {
+    height: 33vh;
+    width: 40vh;
+    background-color: rgba(212, 207, 207, 0.158);
+    border-radius: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+    
+}
+
+
+
+.row1 {
+    height: auto;
+    width: 93%;
+    padding: 2vh 0 2vh 0;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.stud img {
+    border-radius: 8vh;
+}
+
+.stud1 img {
+    /* height: 11vh;
+    width: 10vh; */
+    border-radius: 8vh;
+}
+/* .stud img {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 8vh;
+} */
+
+.s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showb {
+    height: 5vh;
+    width:  17vh;
+    border-radius: 1vh;
+    background-color: #02395A;
+    color: white;
+    margin-top: 5vh;
+    margin-right: 10vh;
+}
+
+.showbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.ans {
+    padding: 0vh 3vh;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.employebtn button {
+    margin-top: 3%;
+    height: 6vh;
+    width: 10%;
+    border-radius: 1vh;
+    font-weight: 650;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: #3F78E0;
+    /* color: blue; */
+}
+.employebtn button:hover{
+    color: #3F78E0;
+}
+
+.employebtn .btn2 {
+    color: black;
+}
+.stud h5 {
+    margin-top: 2%;
+}
+
+.stud1 h5 {
+    margin-top: 2%;
+}
+
+.fn h6 {
+    font-size: 2.5vh;
+    padding-bottom: 2.5vh;
+    /* margin-bottom: vh; */
+}
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    height: 4vh;
+    width: auto;
+    margin: 0.5vh;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 5vh 10vh 5vh 5vh;
+}
+
+.footer li {
+    padding: 0.5vh;
+    display: flex;
+}
+
+.footer h2 {
+    padding: 2vh 0vh;
+}
+
+.last {
+    background-color: rgb(10, 10, 10);
+    height: 8vh;
+    display: flex;
+    padding: 3vh 10vh;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.last h4 {
+    display: flex;
+    justify-content: flex-end;
+    width:60%;
+}
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+}
+
+.footer img {
+    height: 4vh;
+    width: auto;
+    margin: 0.5vh;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 5vh 10vh 5vh 5vh;
+}
+
+.footer li {
+    padding: 0.5vh;
+    display: flex;
+}
+
+.footer h2 {
+    padding: 2vh 0vh;
+}
+
+.last {
+    background-color: rgb(10, 10, 10);
+    height: 8vh;
+    display: flex;
+    padding: 3vh 10vh;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.last h4 {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1250px) {
+
+    .employestaff {
+        display: block;
+        width: auto;
+    }
+    .con{
+        display: block;
+    }
+    .stud1{
+        width: 100%;
+        /* display: block; */
+        /* align-items: center;
+        justify-content: center; */
+
+    }
+    .con{
+        width: auto;
+    }
+    .con_img{
+        width: 80%;
+    }
+    .stud{
+        width: 100%;
+    }
+    /* .stud1 img{
+        margin-left: 25vh;
+        margin-top: 2vh;
+        
+    }
+    .stud1 h5{
+        margin-left: 20vh;
+    } */
+        .l{
+            display: none;
+        }
+        .course1{
+            display: block;
+        }
+        .hamburger{
+            display: block;
+        }
+   
+
+
+    
+}

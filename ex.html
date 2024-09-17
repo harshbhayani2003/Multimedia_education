@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Page</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #1A3A52;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.counter-item {
+    flex: 1;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+   </style>
+</head>
+<body>
+    <div class="counter-container">
+        <div class="counter-item">
+            <i class="icon icon-students"></i>
+            <h3 class="counter" data-target="37500">0+</h3>
+            <p>Students Trained</p>
+        </div>
+        <div class="counter-item">
+            <i class="icon icon-branches"></i>
+            <h3 class="counter" data-target="50">0+</h3>
+            <p>Branches</p>
+        </div>
+        <div class="counter-item">
+            <i class="icon icon-certification"></i>
+            <h3 class="counter" data-target="1500">0+</h3>
+            <p>Certifications</p>
+        </div>
+        <div class="counter-item">
+            <i class="icon icon-courses"></i>
+            <h3 class="counter" data-target="22">0+</h3>
+            <p>Approved Courses</p>
+        </div>
+        <div class="counter-item">
+            <i class="icon icon-companies"></i>
+            <h3 class="counter" data-target="8">0+</h3>
+            <p>Companies Tie-Ups</p>
+        </div>
+    </div>
+    <script >
+        document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = '0';
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const current = +counter.innerText;
+            const increment = target / 200; 
+
+            if (current < target) {
+                counter.innerText = Math.ceil(current + increment);
+                setTimeout(updateCounter, 10); 
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCounter();
+    });
+});
+
+    </script>
+</body>
+</html>
+
+
+<!-- <div class="con">
+    <div class="counter-item">
+         <li><i class="fa-regular fa-user" style="color: #fafcff;"></i></li>
+         <h3 class="counter" data-target="37500">0+</h3>
+         <li class="ab">Students Trained</li>
+    </div>
+    <div class="counter-item">
+         <li><i class="fa-regular fa-user" style="color: #fafcff;"></i></li>
+        <h3 class="counter" data-target="50">0+</h3>
+         <li class="ab">Approved Courses</li>
+    </div>
+    <div class="counter-item">
+         <li><i class="fa-solid fa-suitcase" style="color: #ffffff;"></i></li>
+        <h3 class="counter" data-target="1500">0+</h3>
+         <li class="ab">Companies Tie-Ups</li>
+    </div>
+     <div class="counter-item">
+         <li><i class="fa-solid fa-building" style="color: #f0f2f4;"></i></li>
+         <h3 class="counter" data-target="22">0+</h3>
+         <li class="ab">Branches</li>
+     </div>
+     <div class="counter-item">
+         <li><img src="/img/index-img/certificate.png" alt=""></li>
+          <h3 class="counter" data-target="8">0+</h3>
+         <li class="ab">Certification</li>
+     </div>
+ </div> -->

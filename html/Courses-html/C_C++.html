@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C_Programming</title>
+    <link rel="stylesheet" href="/css/Courses-css/C_C++.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <select name="" id="city">
+                <option value="" hidden>Selected City:Ahmedabad</option>
+                <option value="">Surat</option>
+                <option value="">Rajkot</option>
+                <option value="">Amreli</option>
+                <option value="">Navsari</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="lan">
+                <option value="" hidden>Select Language</option>
+                <option value="">English</option>
+                <option value="">Gujrati</option>
+                <option value="">Hindi</option>
+            </select>
+        </div>
+        <marquee behavior="" direction="left">&#128222; RWA1(Nikol):+91 9979998657 &#128222; RWA2(Navrangpura):+91
+            8808834567 &#128222; RWA3(Manimagar):+91 7600093428 &#128222; RWA4(Bopal):+91 9601999699
+            &#128222; RWA5(Chandkheda):+91 8140055560 &#128222; RWA6(Vastral):+91 7862827707</marquee>
+    </div>
+    <!-- -----------------------------------------navigation-bar------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="nav1 container-fluid">
+
+            <img src="/img/index-img/logo.png" alt="">
+
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <div class="menu">
+                <ul style="padding-left: 0vh; padding-right: 5vh;">
+                    <li> <a href="/html/index-html/index.html">Home</a></li>
+                    <li id="sidestd"> <a href="#">STD 10th & 12th </a>
+                        <div class="sidestd">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li id="sidec"> <a href="#">Career Courses</a>
+                        <div class="sidec">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="sidecoursenav"> <a href="#">Courses</a>
+                        <div class="sidecoursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4">Foundation Courses</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Project_Training.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in Practical Accounnting <br>&
+                                        Taxation</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li id="sidenavaboutas"><a href="#">About Us</a>
+                        <div class="sidenavaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="sidegroup"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="sidegroup">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li id="sidenavstudent"> <a href="#">Student Corner</a>
+                        <div class="sidenavstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li> <a href="/html/Contact us/Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="l">
+                <ul class="l10">
+                    <li class=""><a href="/html/index-html/index.html">Home</a></li>
+                    <li class="" id="std"><a href="" class="">STD 10th & 12th<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="std">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li class="" id="c"><a href="" class="">Career Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="c">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" id="coursenav"><a href="" class="">Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="coursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4"><a href=""></a>Foundation Courses</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in <br>Practical Accounnting &
+                                        Taxation</p></a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="" id="navaboutas"><a href="" class="">About Us<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="navaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="group"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="group">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li class="" id="navstudent"><a href="" class="">Student Corner<i
+                                class="fa-solid fa-angle-down ms-2" style="color: #000205;"></i></a>
+                        <div class="navstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li class=""><a href="/html/Contact us/Contact_us.html" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------------->
+    <div class="content1">
+        <img src="/img/Courses-img/2_7.jpg" alt="">
+    </div>
+    <div class="p1">
+        <p>
+        <h1>C Programming Course in Surat</h1>
+        </p>
+        <p>Home / C Programming Course in Surat</p>
+    </div>
+    <div class="con">
+        <div class="detail">
+            <!-- <p class="par1"><span>About</span>Java Course</p> -->
+            <h1><span>About</span> C Languag Course</h1>
+            <p>C is an administrative, a universal computer language with a fixed type system that supports global
+                variable planning, the process of structured programming. C has structures that transfer well to common
+                hardware instructions by design. The UNIX operating system was primarily created using it as a system
+                programming language. Because of these characteristics, the C language is appropriate for system
+                programming, such as creating compilers or operating systems. If you are interested in Designing, we
+                have our <a href="">Corel Draw Course in Surat</a> for you. Enroll today!</p>
+            <p class="l1">Course Duration <span> 3 Months </span></p>
+            <p class="l1">Daily Time <span> 2 Hours </span></p>
+
+            <div class="l2">
+                <p>Course Modulers</p>
+            </div>
+            <div class="but">
+                <button>C Programming Syllabus</button>
+                <button>C++ Programming Syllabus</button>
+            </div>
+            <p class="l3"><span>C Programming Syllabus</span></p>
+            <div class="l6">
+                <div class="para1">
+                    <p>The students in the C language training in surat will learn the languages functions, methods and
+                        routines. With this training, any student can easily run a C program.</p>
+                </div>
+
+                <li>&#128905 <span> C Programming Course Module </span></li>
+                <li>&#128900 Intro. Of C.</li>
+                <li>&#128900 History & Structure Of C.</li>
+                <li>&#128900 Compile And Run Command.</li>
+                <li>&#128900 Variable & Data Type.</li>
+                <li>&#128900 Constant & Operator.</li>
+                <li>&#128900 Decision Making & Control Statement.</li>
+                <li>&#128900 Local & Global Variable.</li>
+                <li>&#128900 Loops (While, Do While & For).</li>
+                <li>&#128900 Array( 1D & 2D And Multi Dimensional).</li>
+                <li>&#128900 String & String Function.</li>
+                <li>&#128900 Function & Pointers.</li>
+                <li>&#128900 General Expenses Entry.</li>
+                <li>&#128900 Pointer To Arrays.</li>
+                <li>&#128900 Pointer To Functions.</li>
+                <li>&#128900 Dynamic Memory Allocation.</li>
+                <li>&#128900 File Handling & Management.</li>
+                <li>&#128900 Header File.</li>
+                <li>&#128900 Maths, Date & Times Function.</li>
+                <li>&#128900 Operations On Bits.</li>
+                <li>&#128900 Console Input & Output Function.</li>
+            </div>
+
+            <p class="l3"><span>About Course :
+                    <div class="para1">
+                        <p>The <span class="span">C language institute in surat</span> will teach you the following
+                            things -</p>
+                        <p>The fundamental of the program right from the beginning.</p>
+                        <p>One will learn to program a Mac or a window.</p>
+                        <p>Every scratch detail of the C language.</p>
+                        <p>The student will also learn advanced topics from allocations, stack and heap and even the
+                            binary file IO.</p>
+                        <p>The students will learn about different program flows.</p>
+                        <p>The students in the C language training in surat will learn the languages functions, methods
+                            and routines.With this training any student can easily run a C program.</p>
+                        <p>Beginners, people who want to learn to code but have never done it before with C language,
+                            then can learn from step to step.</p>
+                        <div class="l6">
+                            <li>&#128900 The programmers are now going to switch to C language from others like Java,
+                                Ruby, and Python.</li>
+                            <li>&#128900 Cross-platform developers, there are about C compilers for all the major
+                                operating systems as well.</li>
+                            <li>&#128900 The students who will be performing either a C++ or the objective of - have to
+                                start from the basic language of C.</li>
+                        </div>
+                        <p>If you learn the C language, then you can open doors of opportunity for yourself in the world
+                            of coding. Many IT services companies are looking for IT professionals who use languages
+                            like C and Java.
+                        </p>
+                        <p>The C language is one of the most popular and widely accepted coding languages and is used
+                            for programming. The main purpose of this language is to teach people a coding language.
+                            There are barely any computer systems in any company which do not have the C compiler in
+                            them.
+                        </p>
+                    </div>
+
+                    <div class="but1">
+                        <button>Apply For This Module</button>
+                    </div>
+
+                    <p class="l3"><span>C++ Programming Syllabus</span></p>
+
+                    <div class="l6">
+                        <div class="para1">
+                            <p>The C language is an object-oriented programming language that was written in the initial
+                                1970s period through the American computer expert Brian Kerninghan and Canadian
+                                scientists Dennis Ritchie. That is why it is also referred to as the K & R language
+                                taking the last name of the writer's last name initials. They also played a dynamic role
+                                in designing the UNIX operating system. It is a basic language that is a requirement for
+                                any computer programmer.</p>
+                        </div>
+                        <li>&#128905<span> C++ Programming Course Module </span></li>
+                        <li>&#128900 Info. Of OOP.</li>
+                        <li>&#128900 History & Structure Of C.</li>
+                        <li>&#128900 Declaration Of Variable And Data Types.</li>
+                        <li>&#128900 C++ Character Function.</li>
+                        <li>&#128900 Storage Classes (Auto, Exter & Stat).</li>
+                        <li>&#128900 Control Statement And Array.</li>
+                        <li>&#128900 Info. Of Class And Object.</li>
+                        <li>&#128900 Inheritance & Polymorphism.</li>
+                        <li>&#128900 Data Hiding & Encapsulation.</li>
+                        <li>&#128900 Overloading & Reusability.</li>
+                        <li>&#128900 Constructor & Destructor.</li>
+                        <li>&#128900 Member & Friend Function.</li>
+                        <li>&#128900 Inline & Virtual Function.</li>
+                        <li>&#128900 Type Conversion In Class Hierarchies.</li>
+                        <li>&#128900 How to Create News Paperwork.</li>
+                        <li>&#128900 Abstract Classes & Concrete Classes.</li>
+                        <li>&#128900 Memory Management Operator.</li>
+                        <li>&#128900 Command Line Argument.</li>
+                        <li>&#128900 File Management.</li>
+                        <li>&#128900 Exception Handling.</li>
+                        <li>&#128900 Manipulating Bits.</li>
+                        <li>&#128900 Templates.</li>
+                    </div>
+
+                    <div class="para1">
+                        <p><span>About Course :</span></p>
+                        <p>For languages like Java,.net, Android, etc., it is the very first essential language
+                            platform. It is by far the safest and most effective language. Given that it has both
+                            high-level and low-level features that will serve as the foundation for your future
+                            professional chances, it is also essential for moving up the software career ladder. If you
+                            live in the Gujarati city of Surat, you must get C++ training. The most recent version of
+                            C++ is an inbuilt need for promotion for computer programmers. RednWhite provides you with
+                            the leading <a href="">web design course in Ahmedabad.</a>
+                        </p>
+                        <p>Looking at how crucial the language is for a programmer, it goes without saying that the
+                            choice of the right C++ Programming language training institute is vital. The organisation
+                            you are getting the C++ programming course from should not only be able to give you detailed
+                            knowledge of all the aspects of the programming language but also help you to get enough
+                            training in actual projects where it is used. The application of the language is as
+                            significant as gaining academic knowledge of the language.
+                        </p>
+                        <p>The fact that the language has been used in the field for fifty years shows the extent of
+                            advancement it has undertaken. To ensure that the facts and figures about the C++ language
+                            are transferred to the students in an improved way, you need a C++ language training
+                            facility that can teach the language in an approachable manner. Additionally, the professor
+                            should have extensive experience applying the language in real-world projects. You an enroll
+                            for <a href="">coding classes in Ahmedabad.</a> RednWhite is the best institute to start
+                            your career in programming.
+                        </p>
+                        <p>Red and White Multimedia education is your only option in Surat if you want to build your
+                            profession as a computer software developer since it offers all the necessary services,
+                            including excellent faculty, convenient times, and locations around the city. Since its
+                            founding in 2008, it has been carrying the flame for top-notch computer programming
+                            education with a list of courses. The institute is even more noteworthy because it has a
+                            government authorization under its belt.
+                        </p>
+                    </div>
+
+
+
+                    <div class="but1">
+                        <button>Apply Now For The Full Course</button>
+                    </div>
+                    <div class="p4">
+                        <p>Available at these locations</p>
+                        <button>Amreli</button>
+                        <button>Rajkot</button>
+                    </div>
+
+        </div>
+
+        <!--------------------------------------------------------->
+        <div class="data">
+            <img src="/img/Courses-img/Clanguage(1).jpg" alt="">
+            <div class="f1">
+                <p class="f1p1">Book a Free Demo Session</p>
+                <input type="text" placeholder="Name" class="drop">
+                <input type="text" placeholder="Email" class="drop">
+                <input type="text" placeholder="Phone Number" class="drop">
+                <select name="" id="" class="drop">
+                    <option value="">-Select Nearest Branch Location-</option>
+                    <option value="">Adajan</option>
+                    <option value="">Vesu</option>
+                    <option value="">A K Road</option>
+                    <option value="">Sarthana</option>
+                    <option value="">Ved Road</option>
+                    <option value="">Yogi Chowk</option>
+                    <option value="">Mota Varachha</option>
+                    <option value="">Dindoli</option>
+                </select>
+                <div class="captcha">
+                    <input type="checkbox">
+                    <p>I'M Not Robot</p>
+                    <img src="/img/Courses-img/captcha.webp" alt="">
+                </div>
+                <button class="but2">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!--*****************************************************************-->
+
+    <div class="footer">
+        <ul>
+            <li>
+                <h4>CONTACT US</h4>
+            </li>
+            <li>Our Branches</li>
+            <li>
+                <div class="arrow">&#11166;</div> A K Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Yogi Chowk
+            </li>
+            <li>
+                <div class="arrow">&#11166; </div> Sarthana
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Mota varachha
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Ved Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Adajan
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Dindoli
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Vesu
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 7878 444 333
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Franchise Information
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> info@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/facebook.svg" alt="">
+                <img src="/img/index-img/x.svg" alt="">
+                <img src="/img/index-img/youtube.svg" alt="">
+                <img src="/img/index-img/instagram.svg" alt="">
+                <img src="/img/index-img/linkdin.jpg" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>TRENDING COURSE</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> GIM
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> ITA-CS+
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> PHP
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Project Training Surat
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Android Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Web Designing Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Full Stack Development Course
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>IMPORTANT PAGES</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Home
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Contact Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> About Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Blog
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Events
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Approval
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Students T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Cities Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Student Login
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>BE RECRUITER</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Register/Login
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Company T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Student T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 93313 13196
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/beti-bachao-beti-padhao-min.png" alt="">
+                <img src="/img/index-img/digital-india-min.png" alt="">
+                <img src="/img/index-img/Make_In_India-min.png" alt="">
+                <img src="/img/index-img/swachh-india-min.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="last">
+        <p>© Copyright 2024. Red & White Education PVT LTD. All Rights Reserved.</p>
+
+        <h4>Certificate Verification</h4>
+    </div>
+</body>
+
+</html>

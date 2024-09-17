@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="stylesheet" href="/css/Courses-css/PHP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <select name="" id="city">
+                <option value="" hidden>Selected City:Ahmedabad</option>
+                <option value="">Surat</option>
+                <option value="">Rajkot</option>
+                <option value="">Amreli</option>
+                <option value="">Navsari</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="lan">
+                <option value="" hidden>Select Language</option>
+                <option value="">English</option>
+                <option value="">Gujrati</option>
+                <option value="">Hindi</option>
+            </select>
+        </div>
+        <marquee behavior="" direction="left">&#128222; RWA1(Nikol):+91 9979998657 &#128222; RWA2(Navrangpura):+91
+            8808834567 &#128222; RWA3(Manimagar):+91 7600093428 &#128222; RWA4(Bopal):+91 9601999699
+            &#128222; RWA5(Chandkheda):+91 8140055560 &#128222; RWA6(Vastral):+91 7862827707</marquee>
+    </div>
+    <!-- -----------------------------------------navigation-bar------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="nav1 container-fluid">
+
+            <img src="/img/index-img/logo.png" alt="">
+
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <div class="menu">
+                <ul style="padding-left: 0vh; padding-right: 5vh;">
+                    <li> <a href="/html/index-html/index.html">Home</a></li>
+                    <li id="sidestd"> <a href="#">STD 10th & 12th </a>
+                        <div class="sidestd">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li id="sidec"> <a href="#">Career Courses</a>
+                        <div class="sidec">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="sidecoursenav"> <a href="#">Courses</a>
+                        <div class="sidecoursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4">Foundation Courses</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Project_Training.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in Practical Accounnting <br>&
+                                        Taxation</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li id="sidenavaboutas"><a href="#">About Us</a>
+                        <div class="sidenavaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="sidegroup"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="sidegroup">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li id="sidenavstudent"> <a href="#">Student Corner</a>
+                        <div class="sidenavstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li> <a href="/html/Contact us/Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="l">
+                <ul class="l10">
+                    <li class=""><a href="/html/index-html/index.html">Home</a></li>
+                    <li class="" id="std"><a href="" class="">STD 10th & 12th<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="std">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li class="" id="c"><a href="" class="">Career Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="c">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" id="coursenav"><a href="" class="">Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="coursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4"><a href=""></a>Foundation Courses</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in <br>Practical Accounnting &
+                                        Taxation</p></a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="" id="navaboutas"><a href="" class="">About Us<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="navaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="group"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="group">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li class="" id="navstudent"><a href="" class="">Student Corner<i
+                                class="fa-solid fa-angle-down ms-2" style="color: #000205;"></i></a>
+                        <div class="navstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li class=""><a href="/html/Contact us/Contact_us.html" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------------->
+    <div class="content1">
+        <img src="/img/Courses-img/8.jpg" alt="">
+    </div>
+    <div class="p1">
+        <p>
+        <h1>PHP Classes in Surat</h1>
+        </p>
+        <p>Home / PHP Classes in Surat</p>
+    </div>
+    <div class="con">
+        <div class="detail">
+            <!-- <p class="par1"><span>About</span>Java Course</p> -->
+            <h1><span>About</span> PHP Course</h1>
+            <p>PHP is a server-side programming language that is free and open-source that can be used to make apps,
+                websites, CRMs, and more. It is a general-purpose language that is often used and may be integrated into
+                HTML. since of its HTML capabilities, PHP has continued to be a popular language among developers since
+                it makes HTML coding simpler. RednWhite also offers <a href="">Python training in Surat.</a></p>
+            <p class="l1">Course Duration <span> 12 Months </span></p>
+            <p class="l1">Daily Time <span> 2 Hours </span></p>
+
+            <h3>Included In This Course</h3>
+            <p><span> &#10003 </span>Job Support</p>
+            <p><span> &#10003 </span>Rich Learning Content</p>
+            <p><span> &#10003 </span>Taught by Experienced Prof.</p>
+            <p><span> &#10003 </span>Industry Oriented Projects</p>
+
+            <div class="l2">
+                <p>Course Modulers</p>
+            </div>
+            <div class="but">
+                <button>PHP Training Course</button>
+                <button>Core PHP</button>
+                <button>LARAVEL</button>
+                <button>CODEIGNITER</button>
+            </div>
+            <p class="l3"><span>PHP Development Training Course Objectives</span></p>
+            <div class="l6">
+                <li>&#128905 <span> PHP Course Objectives </span></li>
+                <li>&#128900 Introduction to website development</li>
+                <li>&#128900 Understand how server-side programming works on the web</li>
+                <li>&#128900 PHP Basic syntax for variable types and calculations</li>
+                <li>&#128900 Creating conditional structures</li>
+                <li>&#128900 Storing data in arrays</li>
+                <li>&#128900 Using PHP built-in functions and creating custom functions</li>
+                <li>&#128900 Understanding POST and GET in form submission</li>
+                <li>&#128900 How to receive and process form submission data</li>
+                <li>&#128900 Working with SESSION</li>
+                <li>&#128900 HTML design setup into PHP</li>
+                <li>&#128900 Creating a company-oriented Database (MySQL)</li>
+                <li>&#128900 Maintain more security on the website</li>
+                <li>&#128900 File management</li>
+                <li>&#128900 Working with website backend penal</li>
+                <li>&#128900 A working concept with OOP(Object Oriented Programming)</li>
+                <li>&#128900 Working with Ajax</li>
+                <li>&#128900 Social media integration</li>
+                <li>&#128900 Email sending with PHP</li>
+                <li>&#128900 File uploading with PHP</li>
+                <li>&#128900 Website data convert into API</li>
+                <li>&#128900 Real-world Payment getaway creation</li>
+                <li>&#128900 Real-world Blog or e-commerce website creation</li>
+            </div>
+
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>Core PHP</span></p>
+
+            <div class="l6">
+                <li>&#128905<span> Intro to PHP Programming </span></li>
+                <li>&#128900 What is PHP, and what usage of PHP</li>
+                <li>&#128900 intro to server & installing XAMPP</li>
+                <li>&#128900 echo & print function</li>
+
+                <li>&#128905<span> Fundamentals Of PHP </span></li>
+                <li>&#128900 Datatypes</li>
+                <li>&#128900 variables & constants</li>
+                <li>&#128900 introduction of operators (arithmetic, assignment)</li>
+                <li>&#128900 logical operator</li>
+                <li>&#128900 types of comments</li>
+                <li>&#128900 $_request['get'] superglobal variable</li>
+
+                <li>&#128905<span> Control Structure(User Relational Operator) </span></li>
+                <li>&#128900 if statement</li>
+                <li>&#128900 if … else</li>
+                <li>&#128900 ladder if … else</li>
+                <li>&#128900 nested if … else</li>
+                <li>&#128900 Switch case</li>
+                <li>&#128900 Ternary operator</li>
+
+                <li>&#128905<span> Branching & Looping </span></li>
+                <li>&#128900 while loop</li>
+                <li>&#128900 do … while loop</li>
+                <li>&#128900 for loop</li>
+                <li>&#128900 nested for loop</li>
+
+                <li>&#128905<span> Array & Functions </span></li>
+                <li>&#128900 Types Of Array</li>
+                <li>&#128900 Number Index Array</li>
+                <li>&#128900 Associative Array</li>
+                <li>&#128900 Foreach Loop</li>
+                <li>&#128900 Multi-Dimensional Array</li>
+                <li>&#128900 Array Functions</li>
+                <li>&#128900 String Functions</li>
+                <li>&#128900 Date & Time Functions</li>
+                <li>&#128900 User Define Function (UDF)</li>
+
+                <li>&#128905<span> File System Basic </span></li>
+                <li>&#128900 File Handling</li>
+                <li>&#128900 Commonly Used File Functions</li>
+                <li>&#128900 Directory Functions</li>
+
+                <li>&#128905<span> Database With SQL </span></li>
+                <li>&#128900 Introduction To Database & phpMyAdmin</li>
+                <li>&#128900 Make Database & Creating Tables</li>
+                <li>&#128900 Crud Operations</li>
+                <li>&#128900 Insert Update Select And Delete Query Run In MYSQL</li>
+                <li>&#128900 Importing / Exporting SQL File</li>
+
+                <li>&#128905<span> PHP Web Concept With CRUD </span></li>
+                <li>&#128900 Client/Server Communication (HTTP Request Method, Redirecting Page)</li>
+                <li>&#128900 Embed PHP With Html Form</li>
+                <li>&#128900 Super global Variables</li>
+                <li>&#128900 Database Connectivity</li>
+                <li>&#128900 Crud Operations With PHP ( Insert Data )</li>
+                <li>&#128900 Crud Operations With PHP ( View Data )</li>
+                <li>&#128900 Crud Operations With PHP ( Delete Data )</li>
+                <li>&#128900 Crud Operations With PHP ( Update Data)</li>
+
+                <li>&#128905<span> OOP With PHP </span></li>
+                <li>&#128900 Introduction Of Oops Concepts</li>
+                <li>&#128900 Creating Methods</li>
+                <li>&#128900 Crud With Oops ( Insert Data)</li>
+                <li>&#128900 Crud With Oops ( View & Delete Data)</li>
+                <li>&#128900 Crud With Oops ( Update Data )</li>
+
+                <li>&#128905<span> Admin Panel With PHP </span></li>
+                <li>&#128900 Convert HTML admin panel to php</li>
+                <li>&#128900 include(), require(), include_once() & require_once() functions</li>
+                <li>&#128900 table form</li>
+
+                <li>&#128905<span> Working With Blog Panel </span></li>
+                <li>&#128900 Blog website</li>
+                <li>&#128900 creating admin table (crud)</li>
+                <li>&#128900 subcategory data add to a database</li>
+
+                <li>&#128905<span> Blog Post </span></li>
+                <li>&#128900 Multiple images uploading insert/view</li>
+                <li>&#128900 Multiple images delete</li>
+                <li>&#128900 Multiple image update</li>
+
+                <li>&#128905<span> Client Side </span></li>
+                <li>&#128900 Convert HTML into PHP</li>
+                <li>&#128900 Make data dynamic</li>
+                <li>&#128900 Next previous button with the slider</li>
+                <li>&#128900 Gave Comment</li>
+
+                <li>&#128905<span> Server Side Validation </span></li>
+                <li>&#128900 re module</li>
+                <li>&#128900 Getting Specific Pattern-wise Data</li>
+                <li>&#128900 Intro to session</li>
+                <li>&#128900 Simple login & logout.</li>
+                <li>&#128900 multiple logins</li>
+                <li>&#128900 View profile</li>
+                <li>&#128900 update profile</li>
+                <li>&#128900 change password</li>
+
+                <li>&#128905<span> JAVASCRIPT & jQuery ( Client Side Validation ) </span></li>
+                <li>&#128900 Introduction of javascript</li>
+                <li>&#128900 data type</li>
+                <li>&#128900 function</li>
+                <li>&#128900 events of javascript</li>
+                <li>&#128900 quantity increment decrement</li>
+                <li>&#128900 validation with javascript</li>
+                <li>&#128900 jquery validation</li>
+
+                <li>&#128905<span> Ajax </span></li>
+                <li>&#128900 Introduction of Ajax</li>
+                <li>&#128900 Ajax with database & crud operation (data insert)</li>
+                <li>&#128900 Ajax with crud operation ( view and delete data)</li>
+                <li>&#128900 Ajax with crud operation ( update data)</li>
+                <li>&#128900 live search</li>
+
+                <li>&#128905<span> Mail </span></li>
+                <li>&#128900 Mailing feature</li>
+                <li>&#128900 Forgot password</li>
+            </div>
+
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>LARAVEL</span></p>
+
+            <div class="l6">
+                <li>&#128905<span> Intro to PHP Programming </span></li>
+                <li>&#128900 What is PHP, and what usage of PHP</li>
+                <li>&#128900 intro to server & installing XAMPP</li>
+                <li>&#128900 echo & print function</li>
+
+                <li>&#128905<span> Fundamentals Of PHP </span></li>
+                <li>&#128900 Datatypes</li>
+                <li>&#128900 variables & constants</li>
+                <li>&#128900 introduction of operators (arithmetic, assignment)</li>
+                <li>&#128900 logical operator</li>
+                <li>&#128900 types of comments</li>
+                <li>&#128900 $_request['get'] superglobal variable</li>
+
+                <li>&#128905<span> Control Structure(User Relational Operator) </span></li>
+                <li>&#128900 if statement</li>
+                <li>&#128900 if … else</li>
+                <li>&#128900 ladder if … else</li>
+                <li>&#128900 nested if … else</li>
+                <li>&#128900 Switch case</li>
+                <li>&#128900 Ternary operator</li>
+
+                <li>&#128905<span> Branching & Looping </span></li>
+                <li>&#128900 while loop</li>
+                <li>&#128900 do … while loop</li>
+                <li>&#128900 for loop</li>
+                <li>&#128900 nested for loop</li>
+
+                <li>&#128905<span> Array & Functions </span></li>
+                <li>&#128900 Types Of Array</li>
+                <li>&#128900 Number Index Array</li>
+                <li>&#128900 Associative Array</li>
+                <li>&#128900 Foreach Loop</li>
+                <li>&#128900 Multi-Dimensional Array</li>
+                <li>&#128900 Array Functions</li>
+                <li>&#128900 String Functions</li>
+                <li>&#128900 Date & Time Functions</li>
+                <li>&#128900 User Define Function (UDF)</li>
+
+                <li>&#128905<span> Database With SQL </span></li>
+                <li>&#128900 Introduction to Database & phpMyAdmin</li>
+                <li>&#128900 Make Database & Creating Tables</li>
+                <li>&#128900 Primary key concept</li>
+                <li>&#128900 Foreign key concept</li>
+
+                <li>&#128905<span> Blade Template </span></li>
+                <li>&#128900 Introduction Template Inheritance</li>
+                <li>&#128900 Components & Slots</li>
+                <li>&#128900 Displaying Data</li>
+                <li>&#128900 Control Structures</li>
+                <li>&#128900 Forms</li>
+
+                <li>&#128905<span> Admin Panel </span></li>
+                <li>&#128900 Convert HTML Admin Panel to PHP</li>
+                <li>&#128900 Set dashboard into laravel</li>
+                <li>&#128900 Set the table and form it into laravel</li>
+
+                <li>&#128905<span> Form With MVC </span></li>
+                <li>&#128900 CRUD Operations with laravel ( insert)</li>
+                <li>&#128900 Password Handling - sha()</li>
+                <li>&#128900 CSRF Security</li>
+                <li>&#128900 CRUD Operations with laravel (view)</li>
+                <li>&#128900 CRUD Operations with laravel (delete)</li>
+                <li>&#128900 CRUD Operations with laravel (update)</li>
+
+                <li>&#128905<span> FILE SYSTEM </span></li>
+                <li>&#128900 Single File Uploading (insert, view)</li>
+                <li>&#128900 Single File Uploading (delete, update )</li>
+                <li>&#128900 Multiple File Uploading (insert)</li>
+                <li>&#128900 Multiple File Uploading (view, delete)</li>
+                <li>&#128900 Multiple File Uploading ( update)</li>
+
+                <li>&#128905<span> FORM OPERATIONS </span></li>
+                <li>&#128900 Searching with Fields</li>
+                <li>&#128900 Pagination with Fields</li>
+                <li>&#128900 Searching with pagination</li>
+                <li>&#128900 Form Request Validation</li>
+
+                <li>&#128905<span> Blog Post </span></li>
+                <li>&#128900 Multiple images uploading insert/view</li>
+                <li>&#128900 Multiple images delete</li>
+                <li>&#128900 Multiple image update</li>
+
+                <li>&#128905<span> Client Side </span></li>
+                <li>&#128900 Convert HTML into PHP</li>
+                <li>&#128900 Make data dynamic</li>
+                <li>&#128900 Next previous button with the slider</li>
+                <li>&#128900 Gave Comment</li>
+
+                <li>&#128905<span> Server Side Validation </span></li>
+                <li>&#128900 Intro to session</li>
+                <li>&#128900 Simple login & logout.</li>
+                <li>&#128900 multiple logins</li>
+                <li>&#128900 View profile</li>
+                <li>&#128900 update profile</li>
+                <li>&#128900 change password</li>
+
+                <li>&#128905<span> JAVASCRIPT & jQuery ( Client Side Validation ) </span></li>
+                <li>&#128900 Introduction of javascript</li>
+                <li>&#128900 data type</li>
+                <li>&#128900 function</li>
+                <li>&#128900 events of javascript</li>
+                <li>&#128900 quantity increment decrement</li>
+                <li>&#128900 validation with javascript</li>
+                <li>&#128900 jquery validation</li>
+
+                <li>&#128905<span> Ajax </span></li>
+                <li>&#128900 Introduction of Ajax</li>
+                <li>&#128900 ajax with database & crud operation (data insert)</li>
+                <li>&#128900 ajax with crud operation ( view and delete data)</li>
+                <li>&#128900 ajax with crud operation ( update data)</li>
+                <li>&#128900 live search</li>
+
+                <li>&#128905<span> Mail </span></li>
+                <li>&#128900 Mailing feature</li>
+                <li>&#128900 Forgot password</li>
+            </div>
+
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>CODEIGNITER</span></p>
+
+            <div class="l6">
+                <li>&#128905<span> INTRO TO CODEIGNITER </span></li>
+                <li>&#128900 Intro to MVC</li>
+                <li>&#128900 Features of MVC</li>
+                <li>&#128900 Importance of CodeIgniter</li>
+
+                <li>&#128905<span> CODEIGNITER INSTALLATION </span></li>
+                <li>&#128900 Download & Setup</li>
+                <li>&#128900 Configuring env file</li>
+                <li>&#128900 Authentication Facades</li>
+
+                <li>&#128905<span> UNDERSTANDING CODEIGNITER MVC </span></li>
+                <li>&#128900 Directory Structure</li>
+                <li>&#128900 Understanding URL Working</li>
+                <li>&#128900 Removing index.php</li>
+
+                <li>&#128905<span> CONTROLLERS & MODEL </span></li>
+                <li>&#128900 Introduction to controller</li>
+                <li>&#128900 Creating a Controller</li>
+                <li>&#128900 Calling a Controller</li>
+                <li>&#128900 Creating & Calling Constructor Method</li>
+                <li>&#128900 Creating Model Class</li>
+                <li>&#128900 Loading Model</li>
+
+                <li>&#128905<span> ROUTING </span></li>
+                <li>&#128900 Customize Routing Rules</li>
+                <li>&#128900 Wildcards</li>
+                <li>&#128900 Redirects</li>
+
+                <li>&#128905<span> VIEWS </span></li>
+                <li>&#128900 Creating Views</li>
+                <li>&#128900 Passing Data To Views</li>
+
+                <li>&#128905<span> REQUEST & RESPONSE </span></li>
+                <li>&#128900 Session Data</li>
+                <li>&#128900 Flash data</li>
+                <li>&#128900 Redirects</li>
+                <li>&#128900 Cookie Management</li>
+
+                <li>&#128905<span> DATABASE WITH SQL </span></li>
+                <li>&#128900 Introduction to Database & phpMyAdmin</li>
+                <li>&#128900 Make Database & Creating Tables</li>
+                <li>&#128900 Primary key concept</li>
+                <li>&#128900 Foreign key concept</li>
+
+                <li>&#128905<span> ADMIN PANEL </span></li>
+                <li>&#128900 Convert HTML Admin Panel into CodeIgniter</li>
+                <li>&#128900 Set dashboard into CodeIgniter</li>
+                <li>&#128900 Set table and form into CodeIgniter</li>
+
+                <li>&#128905<span> FILE SYSTEM </span></li>
+                <li>&#128900 Single File Uploading</li>
+                <li>&#128900 Multiple File Uploading</li>
+
+                <li>&#128905<span> FORM OPERATIONS </span></li>
+                <li>&#128900 Searching with Fields</li>
+                <li>&#128900 Pagination with Fields</li>
+                <li>&#128900 Searching with pagination</li>
+                <li>&#128900 Form Request Validation</li>
+
+                <li>&#128905<span> DATA MANIPULATE </span></li>
+                <li>&#128900 Join query</li>
+                <li>&#128900 Data fetch with Ajax</li>
+
+                <li>&#128905<span> ADMIN SECURITY </span></li>
+                <li>&#128900 Login/logout with Admin</li>
+                <li>&#128900 Profile</li>
+                <li>&#128900 Change password</li>
+                <li>&#128900 Update Profile</li>
+
+                <li>&#128905<span> E-COMMERCE WEBSITE CLIENT SIDE </span></li>
+                <li>&#128900 Set client side in CodeIgniter</li>
+                <li>&#128900 Display product in CodeIgniter</li>
+                <li>&#128900 Single product view</li>
+                <li>&#128900 Filter product</li>
+
+                <li>&#128905<span> CLIENT SECURITY </span></li>
+                <li>&#128900 Login/logout with Admin</li>
+                <li>&#128900 Profile</li>
+                <li>&#128900 Change password</li>
+                <li>&#128900 Update Profile</li>
+
+                <li>&#128905<span> CART </span></li>
+                <li>&#128900 Add to cart</li>
+                <li>&#128900 view cart</li>
+                <li>&#128900 update cart</li>
+                <li>&#128900 delete cart</li>
+
+                <li>&#128905<span> Final Project * </span></li>
+                <li>&#128900 Mailing Feature</li>
+                <li>&#128900 Payment</li>
+            </div>
+
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>PHP Training Course Overview</span></p>
+            <div class="para1">
+                <p><span>We Are One Of The Top PHP Training Provider In Surat.</span></p>
+                <p>We offer job Support after completing the course.</p>
+                <p> Get the best PHP training in Surat. All of our PHP trainers are highly experienced IT professionals
+                    and love to share their practical knowledge with students. </p>
+                <p>This course is designed to meet all levels of student requirements. Our PHP trainers understand the
+                    need for a fresher and working professional.</p>
+                <p>Our trainers will ensure you learn and understand all aspects of the content of the PHP course. They
+                    provide one-on-one care by listening to each student.</p>
+
+                <p><span>Best PHP Training Institute In Surat</span></p>
+                <p>RNW technologies mainly focus on the present scope of the website and real-time requirements.</p>
+                <p>This course is designed to meet all levels of student requirements.</p>
+                <p>Each section of the module will boost your programming skills.</p>
+                <p>Real-time projects will be conducted, like creating many real-world applications. On successful
+                    completion of the course, you will get a job.</p>
+
+                <p><span>What Are The Prerequisites For PHP Developing Course?</span></p>
+                <p>Basic knowledge in computer and Basic programming skills to look for in a web developer training
+                    program include HTML, CSS and JavaScript to start learning with PHP.</p>
+                <p>You don't need a degree or diploma to secure a job, and Nowadays, companies do not specifically ask
+                    for a degree or diploma. You can also learn designing at us. We are the top <a href="">web
+                        design institute in Surat</a> to learn more about web apps and website development.</p>
+
+                <p><span>Other Benefits Of Learning Android Development Are:</span></p>
+                <p>Higher demands for Jobs :</p>
+                <p>Web development is becoming one of the most in-demand jobs. Because of
+                    today's technology, hospitals and clinics, hotel, resorts, restaurants, and many others have their
+                    websites.</p>
+                <p>Websites are becoming popular. They can even be called a “need” in almost every company and business.
+                    If you browse the internet, you'll see millions of websites worldwide.</p>
+                <p>Web developers' salary is not low. In a Glassdoor report, the average salary of a web developer is
+                    $93,402 per year, which makes it one of the most attractive jobs in the market.</p>
+
+                <p>Be the Boss of yourself :</p>
+                <p>Yes, you can be a freelance developer and be your boss. You can have better salary rate negotiations
+                    for your skills and codes. You don't have to be tied down to just a single company; instead, you can
+                    be a freelance developer, working for various employers with your flexitime work schedule.</p>
+
+                <p>Work Remotely :</p>
+                <p>One of being a web developer is whether you work freelance or for a company, you do the job from
+                    anywhere as long as you have a laptop and an internet connection.</p>
+
+                <p>Improve Creativity: :</p>
+                <p>Designing is part of the job of a web developer. And creativity is a skill for web development. You
+                    get to attract your creativity and come up with different ideas. You will also learn from yourself
+                    as time passes by re-using your previous opinion. And the limit? Only your imagination. Rednwhite
+                    has its branches in other cities. So you can also join <a href="">Computer classes in Ahmedabad.</a>
+                </p>
+                <p>Future Job Requirement :</p>
+                <p>Today, almost everything can be found on the internet. Online shopping, courses and tutorials,
+                    entertainment such as movies and games, and even online dating are online. As this generation’s
+                    technology becomes increasingly popular and in demand globally, so does the need for people with
+                    programming skills.</p>
+            </div>
+
+            <div class="but1">
+                <button>Apply Now For The Full Course</button>
+            </div>
+            <div class="p4">
+                <p>Available at these locations</p>
+                <button>Rajkot</button>
+                <button>Ahmedabad</button>
+            </div>
+
+        </div>
+
+        <!--------------------------------------------------------->
+        <div class="data">
+            <img src="/img/Courses-img/php(1).jpg" alt="">
+            <div class="f1">
+                <p class="f1p1">Book a Free Demo Session</p>
+                <input type="text" placeholder="Name" class="drop">
+                <input type="text" placeholder="Email" class="drop">
+                <input type="text" placeholder="Phone Number" class="drop">
+                <select name="" id="" class="drop">
+                    <option value="">-Select Nearest Branch Location-</option>
+                    <option value="">Adajan</option>
+                    <option value="">Vesu</option>
+                    <option value="">A K Road</option>
+                    <option value="">Sarthana</option>
+                    <option value="">Ved Road</option>
+                    <option value="">Yogi Chowk</option>
+                    <option value="">Mota Varachha</option>
+                    <option value="">Dindoli</option>
+                </select>
+                <div class="captcha">
+                    <input type="checkbox">
+                    <p>I'M Not Robot</p>
+                    <img src="/img/Courses-img/captcha.webp" alt="">
+                </div>
+                <button class="but2">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!--*****************************************************************-->
+
+    <div class="footer">
+        <ul>
+            <li>
+                <h4>CONTACT US</h4>
+            </li>
+            <li>Our Branches</li>
+            <li>
+                <div class="arrow">&#11166;</div> A K Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Yogi Chowk
+            </li>
+            <li>
+                <div class="arrow">&#11166; </div> Sarthana
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Mota varachha
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Ved Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Adajan
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Dindoli
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Vesu
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 7878 444 333
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Franchise Information
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> info@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/facebook.svg" alt="">
+                <img src="/img/index-img/x.svg" alt="">
+                <img src="/img/index-img/youtube.svg" alt="">
+                <img src="/img/index-img/instagram.svg" alt="">
+                <img src="/img/index-img/linkdin.jpg" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>TRENDING COURSE</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> GIM
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> ITA-CS+
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> PHP
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Project Training Surat
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Android Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Web Designing Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Full Stack Development Course
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>IMPORTANT PAGES</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Home
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Contact Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> About Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Blog
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Events
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Approval
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Students T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Cities Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Student Login
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>BE RECRUITER</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Register/Login
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Company T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Student T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 93313 13196
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/beti-bachao-beti-padhao-min.png" alt="">
+                <img src="/img/index-img/digital-india-min.png" alt="">
+                <img src="/img/index-img/Make_In_India-min.png" alt="">
+                <img src="/img/index-img/swachh-india-min.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="last">
+        <p>© Copyright 2024. Red & White Education PVT LTD. All Rights Reserved.</p>
+
+        <h4>Certificate Verification</h4>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,821 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* -------------------------------------------------header---------------------------------------------------------------- */
+.header {
+    background-color: red;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#city {
+    height: 4vh;
+    border-radius: 0.5vh;
+    background: transparent;
+    color: white;
+    margin-left: 10vh;
+    border: 0.3vh solid white
+}
+#lan{
+    height: 4vh;
+    border-radius: 0.5vh;
+    margin-left: 1vh;
+    background: transparent;
+    color: white;
+    border: 0.3vh solid white
+}
+.header option{
+    color: black;
+}
+.header marquee {
+    display: flex;
+    margin-left: 60vh;
+    color: white;
+    margin-right: 10vh;
+}
+/* --------------------------------------------------------side-Navigation-bar--------------------------------------------- */
+.hamburger {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #efeaea;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+    display: none;
+}
+
+.menu a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* .menu a:hover {
+    background-color: #575757;
+} */
+.content {
+    padding: 60px 20px;
+    margin-top: 60px;
+    /* Space for the fixed header */
+}
+
+#menu-toggle:checked+.menu {
+    width: 250px;
+    display: block;
+}
+
+.std {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.c {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+    /* display: flex; */
+}
+
+.coursenav {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.navaboutas {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.group {
+    display: none;
+    z-index: 40;
+    /* padding: 5vh 0vh 5vh 0vh; */
+}
+
+.navstudent {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.sidestd {
+    display: none;
+    z-index: 40;
+}
+
+.sidec {
+    display: none;
+    z-index: 40;
+}
+
+.sidecoursenav {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavaboutas {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavstudent {
+    display: none;
+    z-index: 40;
+}
+
+.sidegroup {
+    display: none;
+    z-index: 41;
+}
+
+/* -----------------------------------------------------------navigation-bar------------------------------------------------- */
+.nav1 {
+    display: flex;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+}
+
+.l2 {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    padding-right: 20vh;
+}
+
+.nav1 a {
+    margin-left: 5vh;
+    color: black;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav1 img {
+    height: 8vh;
+    width: 25vh;
+    margin-left: 10vh;
+}
+
+.career h3 {
+    padding-bottom: 1vh;
+    border-bottom: 0.2vh dashed black;
+}
+
+.img {
+    height: 80vh;
+    width: auto;
+    background: black;
+    animation-name: img;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.l ul li a:hover {
+    color: red;
+}
+
+#std:hover .std {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 100vh;
+    background-color: white;
+}
+
+#c:hover .c {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    display: flex;
+}
+
+#coursenav:hover .coursenav {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 10vh;
+    background-color: white;
+    display: flex;
+}
+
+#navaboutas:hover .navaboutas {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    /* width: 50vh; */
+    /* border: 1px solid black; */
+}
+
+#group:hover .group {
+    display: block;
+    position: absolute;
+    width: 40vh;
+    top: 6vh;
+    right: 35vh;
+    background-color: white;
+}
+
+#navstudent:hover .navstudent {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 30vh;
+    background-color: white;
+}
+
+#sidestd:hover .sidestd {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    /* overflow-y: scroll; */
+    background-color: white;
+}
+
+#sidec:hover .sidec {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidecoursenav:hover .sidecoursenav {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavaboutas:hover .sidenavaboutas {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavstudent:hover .sidenavstudent {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidegroup:hover .sidegroup {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.menu>ul {
+    list-style: none;
+}
+
+.menu a {
+    margin: 1vh;
+    padding: 1vh;
+}
+/* -------------------first-page-------------------------------- */
+/* ---------------------counter----------------------- */
+.con {
+    background-color: rgb(89, 89, 179);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+   
+    
+}
+
+.con ul {
+    list-style: none;
+
+}
+
+.con img {
+    height: 3vh;
+    width: 3vh;
+}
+.con .img2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.con li {
+    color: white;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+    text-align: center;
+}
+
+.con .ab {
+    color: rgb(175, 175, 231);
+    font-size: 2vh;
+}
+span{
+    color: rgb(249, 249, 250);
+    font-size: 5vh;
+}
+/* --------------------------------------------course---------------------------------- */
+.course1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    font-size: 7vh;
+}
+
+.con1 {
+    margin: 0vh 20vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28vh, 1fr));
+}
+
+.con1 div {
+    border-radius: 3vh;
+    margin: 2vh;
+    padding: 3vh 5vh;
+    background-image: linear-gradient(rgba(102, 99, 99, 0.174),white);
+    box-shadow: 3px 5px 5px 3px rgb(102, 99, 99,0.300);
+}
+.con1 div:hover {
+    transform: scale(1.1);
+}
+.con1 img {
+    height: 7vh;
+    width: 7vh;
+}
+/* -----------------------------------------syllabus-------------------------------------- */
+.syllabus h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    font-size: 7vh;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.con11 {
+    height: 60vh;
+    width: 40vh;
+}
+
+.con12 {
+    position: relative;
+    bottom: 28vh;
+    left:0;
+    text-align: center;
+    height: 28vh;
+    width: 40vh;
+    background-image: linear-gradient(to top, rgba(13, 13, 248, 0.559), rgba(95, 95, 202, 0.263));
+}
+.con12 img {
+    height: 5vh;
+    width: 5vh;
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+.video{
+    margin-right: 15vh;
+    margin-left: 15vh;
+    flex-wrap: wrap;
+}
+.video img{
+    height: 50vh;
+    width: 70vh;
+    border-radius: 1vh;
+    float: left;
+    margin-right: 20vh;
+}
+.video .ul{
+    display: flex;
+    margin-top: 5vh;
+}
+.video .p{
+    font-size: 5vh;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 5vh
+}
+.p span{
+    color: red;
+}
+.ul{
+    display: flex;
+}
+#ul1{
+   width: 100vh;
+   margin-right: 5vh;
+}
+.ul li{
+    margin-bottom: 3vh;
+}
+.detail{
+    margin: 15vh 0;
+    width: 100%;
+    display: inline-block;
+    background-color: gainsboro;
+    padding: 15vh 20vh;
+}
+.ul2{
+    display: flex;
+    margin-top: 5vh;
+}
+.detail img{
+    float: right;
+    height: 50vh;
+    width: 60vh;
+    margin-left: 20vh;
+    
+}
+.link{
+    display: flex;
+    justify-content: flex-end;
+    width: 99%;
+    position: relative;
+    top: 35vh;
+}
+.detail iframe{
+    height: 33vh;
+    width: 56vh;
+    border: 2px solid black;
+}
+.detail .p1{
+    font-size: 3vh;
+    margin-bottom: 2vh;
+   
+    
+}
+.detail .p2{
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+.ul2 li{
+    margin-bottom: 2vh;
+    display: flex;
+}
+#ul3{
+    margin-right: 15vh;  
+    list-style: none;
+}
+#ul4{
+    list-style: none;
+}
+.arrow{
+    color: red;
+}
+.detail input[type=submit]{
+    background-color: darkblue;
+    color: white;
+    height: 5vh;
+    width: 12vh;
+    border-radius: 1vh;
+    margin-top: 5vh;
+}
+.place{
+    text-align: center;
+    margin-top: 10vh;
+}
+#place{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#img img{
+    height: 30vh;
+    width: 40vh;
+    margin-top: 5vh;
+    border-radius: 2vh;
+}
+.career{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#career h1{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+#img2{
+    border: 0.3vh solid rgb(200, 198, 198);
+    height: auto;
+    width: 50vh;
+    text-align: center;
+    padding: 5vh;
+    margin-bottom: 5vh;
+}
+#img2 img{
+    height: auto;
+    width: 25vh;
+}
+#img2 h2{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+#img2 input{
+    background-color: darkblue;
+    color: white;
+    height: 5vh;
+    width: 12vh;
+    border-radius: 1vh;
+    margin-top: 5vh;
+}
+.trending{
+    display: flex;
+    overflow: auto;
+    text-align: center;
+}
+#trending h1{
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+#img3{
+    border: 0.3vh solid gainsboro;
+    margin-bottom: 3vh;
+    border-radius: 1vh;
+    margin-right: 2vh;
+}
+#img3 img{
+    height: auto;
+    width: 30vh;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+#img3 p{
+    color: grey;
+    padding: 1vh;
+}
+#img3 input{
+    background-color: darkblue;
+    color: white;
+    height: 5vh;
+    width: 12vh;
+    border-radius: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.world{
+    display: flex;
+    padding: 15vh 22vh;
+    background-color: gainsboro;
+}
+.text{
+    height: auto;
+    width: 70vh;
+}
+.photo{
+    padding-left: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo img{
+    border-radius: 1vh;
+  
+    margin-right: 2vh;
+   
+}
+.photo1{
+    height: 30vh;
+    width: auto;
+    margin-top: 2vh;
+}
+.photo2{
+    height: 34vh;
+    width: auto;
+}
+.photo3{
+    height: 25vh;
+    width: auto;
+    margin-left: 2vh;
+}
+.photo4{
+    height: 15vh;
+    width: auto;
+}
+.photo5{
+    height: 25vh;
+    width: auto;
+}
+.apply {
+    background-color: rgb(29, 31, 82);
+    color: white;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    font-size: 2vh;
+    margin-top: 5vh;
+    animation-name: applyani;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes applyani {
+    0% {
+        
+    }
+
+    50% {
+     
+        transform: scale(1.1);
+    }
+
+    100% {
+         }
+}
+/* ------------------------------------------------------------------------------------------------------- */
+#review{
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#review span{
+    color: red;
+
+}
+.review1{
+    margin: 2vh 20vh 10vh 20vh;
+    border: 0.1vh solid rgba(0, 0, 0, 0.159);
+}
+
+.stu{
+    text-align: center;
+    width: auto;
+    margin-top: 2vh;
+}
+.stu img{
+    margin-right: 15vh;
+    clip-path: circle();
+    height: 10vh;
+}
+.stu h4{
+   
+    margin-bottom: 5vh;
+}
+#per{
+    margin: 2vh 20vh;
+}
+
+#span{
+    position: relative;
+    top: 3vh;
+    right: 27vh;
+    color: rgb(246, 157, 4);
+}
+/* ---------------------------------------------------------------------------------------------- */
+.bookdemo1 {
+    /* margin-top: 8vh; */
+    width: auto;
+    height: auto;
+    border-radius: 1vh;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 3vh 0vh;
+    position: sticky;
+    top: 15vh;
+}
+
+.bookdemo1 .txtbox {
+    border: 0.2vh solid rgba(128, 128, 128, 0.607);
+    border-radius: 1vh;
+    padding: 2vh 3vh;
+    margin-top: 2vh;
+    width: 90%;
+    font-size: 2vh;
+    font-weight: lighter;
+    background-color: rgb(243, 243, 243);
+}
+
+.captcha {
+    border: 0.2vh solid rgba(128, 128, 128, 0.607);
+    border-radius: 1vh;
+    padding: 2vh 0vh 2vh 3vh;
+    margin: 3vh;
+    width: 80%;
+    font-size: 2vh;
+    font-weight: lighter;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.captchaimg {
+    margin-left: 30%;
+    height: 5vh;
+    width: 5vh;
+}
+
+.btnsubmit {
+    background-color: red;
+    border-radius: 1vh;
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    padding: 1.5vh;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer img{
+    height: 4vh;
+    width: auto;
+    margin: 0.5vh;
+}
+.footer ul{
+    list-style: none;
+    margin: 5vh 10vh 5vh 5vh;
+}
+.footer li{
+    padding: 0.5vh;
+    display: flex;
+}
+.footer h2{
+    padding: 2vh 0vh;
+}
+.last{
+    background-color: rgb(10, 10, 10);
+    height: 8vh;
+    display: flex;
+    padding: 3vh 10vh;
+    color: white;
+}
+/* ---------------------------------------------------------------------------------- */
+.last h4{
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+/* ----------------------------------------------------media--------------------------------------------------- */
+@media screen and (max-width : 1000px){
+    .l{
+        display: none;
+    }
+    .course1{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .stu{
+        width: auto;
+        margin-top: 2vh;
+    }
+    .stu img{
+        margin-left: 10%;
+        clip-path: circle();
+        height: 10vh;
+    }
+    .stu h4{
+       
+        margin-bottom: 5vh;
+    }
+    
+}
+
+/* ------------------------------------------------------------------------------ */

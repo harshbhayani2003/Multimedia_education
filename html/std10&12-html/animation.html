@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/std10&12-css/animation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <select name="" id="city">
+                <option value="" hidden>Selected City:Ahmedabad</option>
+                <option value="">Surat</option>
+                <option value="">Rajkot</option>
+                <option value="">Amreli</option>
+                <option value="">Navsari</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="lan">
+                <option value="" hidden>Select Language</option>
+                <option value="">English</option>
+                <option value="">Gujrati</option>
+                <option value="">Hindi</option>
+            </select>
+        </div>
+        <marquee behavior="" direction="left">&#128222; RWA1(Nikol):+91 9979998657 &#128222; RWA2(Navrangpura):+91
+            8808834567 &#128222; RWA3(Manimagar):+91 7600093428 &#128222; RWA4(Bopal):+91 9601999699
+            &#128222; RWA5(Chandkheda):+91 8140055560 &#128222; RWA6(Vastral):+91 7862827707</marquee>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="nav1 container-fluid">
+
+            <img src="/img/index-img/logo.png" alt="">
+
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <div class="menu">
+                <ul style="padding-left: 0vh; padding-right: 5vh;">
+                    <li> <a href="/html/index-html/index.html">Home</a></li>
+                    <li id="sidestd"> <a href="#">STD 10th & 12th </a>
+                        <div class="sidestd">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li id="sidec"> <a href="#">Career Courses</a>
+                        <div class="sidec">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="sidecoursenav"> <a href="#">Courses</a>
+                        <div class="sidecoursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4">Foundation Courses</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Project_Training.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in Practical Accounnting <br>&
+                                        Taxation</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li id="sidenavaboutas"><a href="#">About Us</a>
+                        <div class="sidenavaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="sidegroup"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="sidegroup">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li id="sidenavstudent"> <a href="#">Student Corner</a>
+                        <div class="sidenavstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li> <a href="/html/Contact us/Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="l">
+                <ul class="l2">
+                    <li class=""><a href="/html/index-html/index.html">Home</a></li>
+                    <li class="" id="std"><a href="" class="">STD 10th & 12th<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="std">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li class="" id="c"><a href="" class="">Career Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="c">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" id="coursenav"><a href="" class="">Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="coursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4"><a href=""></a>Foundation Courses</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in <br>Practical Accounnting &
+                                        Taxation</p></a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="" id="navaboutas"><a href="" class="">About Us<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="navaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="group"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="group">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li class="" id="navstudent"><a href="" class="">Student Corner<i
+                                class="fa-solid fa-angle-down ms-2" style="color: #000205;"></i></a>
+                        <div class="navstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li class=""><a href="/html/Contact us/Contact_us.html" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------------------Slider----------------------------------------------------- -->
+    <div class="slider">
+        <img src="/img/Std10&12-img/animation-slider-1.jpg" alt="">
+    </div>
+    <div class="c1">
+        <div class="c1_con">
+            <div class="c1_img">
+                <img src="/img/Std10&12-img/p3_c1.png" alt="">
+            </div>
+            <div class="c1_content">
+                <p style="font-size: 4vh;">About 2-Year Animation Course</p>
+                <p>The Indian Animation Industry encompasses traditional 2D animation, 3D animation, and visual effects
+                    for feature films. Animated feature-length films returned the highest gross margins (around 52%) of
+                    all film genres between 2004 and 2013. Animation as an art and industry continues to thrive as of
+                    the early 2020s. Today, the biggest Hollywood companies are Disney and Comcast. Together, they own
+                    or control something like 90% of all feature animation created in North America. When Disney or
+                    Pixar makes a movie, the production budget will be US$200+ million, and the studio does not expect
+                    to recoup the investment from the box office.</p>
+                <div class="span1">
+                    <span id="s1">Course Duration <span> 2 Year</span></span>
+                    <span id="s1">Daily Time <span> 2 Hours</span></span>
+                </div>
+                <p style="font-size: 4vh;">Included In This Course</p>
+                <li>Job Support</li>
+                <li>Rich Learning Content</li>
+                <li>Taught by Experienced Prof.</li>
+                <li>Industry Oriented Projects</li>
+            </div>
+        </div>
+    </div>
+    <div class="c2">
+        <p style="font-size: 4vh;text-align: center;">Included Subjects in 2-Year Animation Course</p>
+        <div class="c2_con">
+            <div class="c2_box1">
+                <div class="box_con">
+                    <p style="font-size: 4vh;">Graphic</p><br>
+                    <p id="f_color">Graphic design is a profession, applied art, and academic discipline whose activity consists in
+                        projecting visual communications intended to transmit specific messages to social groups with
+                        specific objectives.</p>
+                </div>
+                <div class="box_img">
+                    <img src="/img/Std10&12-img/p3_c2_i1.png" alt="">
+                </div>
+            </div>
+            <div class="c2_box2">
+                <div class="box_con">
+                    <p style="font-size: 4vh;">2D Animation</p><br>
+                    <p id="f_color">2D animation is the art of creating movement in a two-dimensional space. This includes
+                        characters, creatures, FX, and backgrounds. The illusion of movement is created when individual
+                        drawings are sequenced together over time.</p>
+                </div>
+                <div class="box_img">
+                    <img src="/img/Std10&12-img/p3_c2_i2.png" alt="">
+                </div>
+            </div>
+            <div class="c2_box2">
+                <div class="box_con">
+                    <p style="font-size: 4vh;">3D Animation Advanced</p><br>
+                    <p id="f_color">Advanced 3D Animation & 3D Modelling is a full-time, two-year Centre for Entertainment Arts (CEA)
+                        program focused on 3D Animation and 3D Modelling and its various departmental specializations,
+                        such as 3D animation (character and creature), rigging, 3D Modeling & Sculpting,, and
+                        texturing/surfacing.</p>
+                </div>
+                <div class="box_img">
+                    <img src="/img/Std10&12-img/p3_c2_i3.png" alt="">
+                </div>
+            </div>
+            <div class="c2_box1">
+                <div class="box_con">
+                    <p style="font-size: 4vh;">3D FX & VFX</p><br>
+                    <p id="f_color">VFX involves the integration of live-action footage (which may include in-camera special effects)
+                        and generated imagery (digital or optics, animals or creatures) which look realistic but would
+                        be dangerous, expensive, impractical, time-consuming, or impossible to capture on film.</p>
+                </div>
+                <div class="box_img">
+                    <img src="/img/Std10&12-img/p3_c2_i4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c3">
+        <div class="c3_img">
+            <img src="/img/Std10&12-img/p3_c3.png" alt="">
+        </div>
+        <div class="c3_con">
+            <h1>Learn From the Industry Experts</h1>
+            <img src="/img/Std10&12-img/btn.png" alt="">
+        </div>
+    </div>
+    <div class="c4">
+        <div class="c4_video">
+            <video autoplay muted>
+                <source src="/img/Std10&12-img/Graphics-Video.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <div class="c4_con">
+            <p style="font-size: 5vh;">Graphics</p>
+            <li>Understand Concepts of Graphics & illustration</li>
+            <li>2D Graphics Design</li>
+            <li>Digital illustration</li>
+            <li>Product Design</li>
+            <li>Product Packaging Design</li>
+            <li>Digital Painting</li>
+            <li>Photo Manipulation</li>
+            <li>Design graphics Profile</li>
+            <li>Software – Adobe Photoshop CC, Adobe Illustrator CC, Drawing</li>
+            <img src="/img/Std10&12-img/btn.png" alt="">
+        </div>
+    </div>
+    <div class="c5">
+        <div class="c5_video">
+            <video autoplay muted>
+                <source src="/img/Std10&12-img/Animation-video.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <div class="c5_con">
+            <p style="font-size: 5vh;">2D Animation</p>
+            <li>Cinematography</li>
+            <li>Title Making</li>
+            <li>Promo video</li>
+            <li>Rendering with the final output</li>
+            <li>Motion Graphics</li>
+            <li>Intro of Element 3D</li>
+            <li>Audio & Video Editing</li>
+            <li>Creating Short Film</li>
+            <li>Making work Showreels with Online Platforms (Art Station, Behance, Dribbble, etc.)</li>
+            <li>Software – Adobe Animate CC, Adobe Audition CC, Adobe Premiere CC, Adobe After effect CC, Element 3D
+            </li>
+            <button>Apply For The 2D Animation</button>
+        </div>
+    </div>
+    <div class="c6">
+        <div class="c4_video">
+            <video autoplay muted>
+                <source src="/img/Std10&12-img/animation-3.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <div class="c4_con">
+            <p style="font-size: 5vh;">3D Animation Advanced</p>
+            <li>Introduction to animation and history</li>
+            <li>3D Modeling</li>
+            <li>Hard surface Modeling</li>
+            <li>Digital 3D Animation (Maya)</li>
+            <li>3D Character Design (Maya)</li>
+            <li>Rigging and Animation (Maya)</li>
+            <li>3D Title Animation</li>
+            <li>Shading & Texturing (Maya)</li>
+            <li>Rendering (Arnold Render)</li>
+            <li>Introduction to Z-brush</li>
+            <li>Short animation Film making</li>
+            <li>3D Sculpting</li>
+            <li>Making a 3D Animation Short film</li>
+            <li>Software – Autodesk Maya, Z-Brush, Arnold Render</li>
+            <button>Apply For The 2D Animation</button>
+        </div>
+    </div>
+    <div class="c7">
+        <div class="c5_video">
+            <video autoplay muted>
+                <source src="/img/Std10&12-img/animation-4.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+        <div class="c5_con">
+            <p style="font-size: 5vh;">3D FX & VFX</p>
+            <li>Introduction to Nuke</li>
+            <li>Rotoscopy</li>
+            <li>Wire removal</li>
+            <li>Cleanup</li>
+            <li>Camera Tracking</li>
+            <li>Compositing</li>
+            <li>Color Correction</li>
+            <li>Green/ Blue Screen</li>
+            <li>Making a Short film using Special effects</li>
+            <li>Software - Nuke</li>
+            <button>Apply For The 3D FX & VFX</button>
+        </div>
+    </div>
+    <div class="c8">
+        <p style="font-size: 5vh;text-align: center; margin-top:3% ;font-weight: 550;">WorkShop</p>
+        <div class="c8_box">
+            <div class="c8_b">
+                <p style="font-size: 3.5vh;">-Photo Manipulation</p>
+            </div>
+            <div class="c8_b">
+                <p style="font-size: 3.5vh;">-Flip Book</p>
+            </div>
+            <div class="c8_b">
+                <p style="font-size: 3.5vh;">-3D Paint</p>
+            </div>
+            <div class="c8_b">
+                <p style="font-size: 3.5vh;">-3D FX & VFX</p>
+            </div>
+            <div class="c8_b">
+                <p style="font-size: 3.5vh;">-Video Editing</p>
+            </div>
+        </div>
+    </div>
+    <div class="c9">
+        <p style="text-align: center; margin: 2%;">FAQ</p>
+        <p style="font-size: 4vh;text-align: center; margin-bottom: 3%;">If you don't see an answer to your question, Fill
+            out the contact form.</p>
+        <div class="c9_box">
+            <input type="checkbox" id="a">
+            <label for="a" style="font-size: 3vh; padding: 2%;"><i class="fa-solid fa-angle-down"></i> What will you learn in the 2 Years of Animation
+                Course?</label>
+            <div class="c9_con">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Animate</li>
+                <li>Adobe Audition</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe After Effects</li>
+                <li>Element 3D</li>
+                <li>Maya (Advanced)</li>
+                <li>Z-brush</li>
+                <li>Nuke</li>
+                <li>Arnold Render</li>
+            </div>
+        </div>
+        <div class="c9_box">
+            <input type="checkbox" id="b">
+            <label for="b" style="font-size: 3vh; padding: 2%;"><i class="fa-solid fa-angle-down"></i> Career options after Animation & VFX
+                course?</label>
+            <div class="c9_con">
+                <li>Animation film production studios</li>
+                <li>Television channels</li>
+                <li>Television production houses</li>
+                <li>Ad production houses</li>
+                <li>Gaming companies</li>
+            </div>
+        </div>
+        <div class="c9_box">
+            <input type="checkbox" id="c">
+            <label for="c" style="font-size: 3vh; padding: 2%;"> <i class="fa-solid fa-angle-down"></i> Career options after Animation & VFX course?</label>
+            <div class="c9_con">
+                <li>The program teaches students to conceptualize, visualize, plan, implement, execute, and fine-tune
+                    their skills, giving them an edge over competitors.</li>
+                <li>The program teaches Design & Visualisation, 3D Animation and Advanced 3D Animation, making them
+                    future-ready.</li>
+                <li>Students learn the latest industry-relevant software in Animation including 3ds Max with V Ray,
+                    Maya, Digital Effects, Z-Brush, and many more.</li>
+                <li>Students also learn all the techniques of animation, including Drawings.</li>
+                <li>Expert faculties help students create a digital portfolio with an area of specialization.</li>
+            </div>
+        </div>
+        <button>Ask Your Query To Our Career Counseling Expert</button>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>
+                <h4>CONTACT US</h4>
+            </li>
+            <li>Our Branches</li>
+            <li>
+                <div class="arrow">&#11166;</div> A K Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Yogi Chowk
+            </li>
+            <li>
+                <div class="arrow">&#11166; </div> Sarthana
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Mota varachha
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Ved Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Adajan
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Dindoli
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Vesu
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 7878 444 333
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Franchise Information
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> info@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/facebook.svg" alt="">
+                <img src="/img/index-img/x.svg" alt="">
+                <img src="/img/index-img/youtube.svg" alt="">
+                <img src="/img/index-img/instagram.svg" alt="">
+                <img src="/img/index-img/linkdin.png" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>TRENDING COURSE</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> GIM
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> ITA-CS+
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> PHP
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Project Training Surat
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Android Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Web Designing Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Full Stack Development Course
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>IMPORTANT PAGES</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Home
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Contact Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> About Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Blog
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Events
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Approval
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Students T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Cities Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Student Login
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>BE RECRUITER</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Register/Login
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Company T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Student T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 93313 13196
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/beti-bachao-beti-padhao-min.png" alt="">\
+                <img src="/img/index-img/digital-india-min.png" alt="">
+                <img src="/img/index-img/Make_In_India-min.png" alt="">
+                <img src="/img/index-img/swachh-india-min.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="last">
+        <p>© Copyright 2024. Red & White Education PVT LTD. All Rights Reserved.</p>
+
+        <h4>Certificate Verification</h4>
+    </div>
+</body>
+
+</html>

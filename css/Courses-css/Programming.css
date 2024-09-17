@@ -1,0 +1,449 @@
+::selection {
+    color: white;
+    background-color: gray;
+}
+
+* {
+    margin: 0vh;
+    padding: 0vh;
+}
+
+body {
+    background-color: rgba(222, 220, 220, 0.603);
+}
+
+.header {
+    background-color: red;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#city {
+    height: 4vh;
+    border-radius: 0.5vh;
+    background: transparent;
+    color: white;
+    margin-left: 10vh;
+    border: 0.3vh solid white
+}
+
+#lan {
+    height: 4vh;
+    border-radius: 0.5vh;
+    margin-left: 1vh;
+    background: transparent;
+    color: white;
+    border: 0.3vh solid white
+}
+
+.header option {
+    color: black;
+}
+
+.header marquee {
+    display: flex;
+    margin-left: 60vh;
+    color: white;
+    margin-right: 10vh;
+}
+
+/* -------------------------Navigation-bar-------------------------------- */
+.hamburger {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #efeaea;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+    display: none;
+}
+
+.menu a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* .menu a:hover {
+    background-color: #575757;
+} */
+.content {
+    padding: 60px 20px;
+    margin-top: 60px;
+    /* Space for the fixed header */
+}
+
+#menu-toggle:checked+.menu {
+    width: 250px;
+    display: block;
+}
+
+.std {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.c {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+    /* display: flex; */
+}
+
+.coursenav {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.navaboutas {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.group {
+    display: none;
+    z-index: 40;
+    /* padding: 5vh 0vh 5vh 0vh; */
+}
+
+.navstudent {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.sidestd {
+    display: none;
+    z-index: 40;
+}
+
+.sidec {
+    display: none;
+    z-index: 40;
+}
+
+.sidecoursenav {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavaboutas {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavstudent {
+    display: none;
+    z-index: 40;
+}
+
+.sidegroup {
+    display: none;
+    z-index: 41;
+}
+
+/* -----------------------------------------------------------navigation-bar------------------------------------------------- */
+.nav1 {
+    display: flex;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+}
+
+.l10 {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    padding-right: 20vh;
+}
+
+.nav1 a {
+    margin-left: 5vh;
+    color: black;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav1 img {
+    height: 8vh;
+    width: 25vh;
+    margin-left: 10vh;
+}
+
+.career h3 {
+    padding-bottom: 1vh;
+    border-bottom: 0.2vh dashed black;
+}
+
+.img {
+    height: 80vh;
+    width: auto;
+    background: black;
+    animation-name: img;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.l ul li a:hover {
+    color: red;
+}
+
+#std:hover .std {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 100vh;
+    background-color: white;
+}
+
+#c:hover .c {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    display: flex;
+}
+
+#coursenav:hover .coursenav {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 10vh;
+    background-color: white;
+    display: flex;
+}
+
+#navaboutas:hover .navaboutas {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    /* width: 50vh; */
+    /* border: 1px solid black; */
+}
+
+#group:hover .group {
+    display: block;
+    position: absolute;
+    width: 40vh;
+    top: 6vh;
+    right: 35vh;
+    background-color: white;
+}
+
+#navstudent:hover .navstudent {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 30vh;
+    background-color: white;
+}
+
+#sidestd:hover .sidestd {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    /* overflow-y: scroll; */
+    background-color: white;
+}
+
+#sidec:hover .sidec {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidecoursenav:hover .sidecoursenav {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavaboutas:hover .sidenavaboutas {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavstudent:hover .sidenavstudent {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidegroup:hover .sidegroup {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.menu>ul {
+    list-style: none;
+}
+
+.menu a {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+@media screen and (max-width :768px) {
+    .l {
+        display: none;
+    }
+
+    /* .course1 {
+        display: block;
+    } */
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/************************************************************************/
+.content1 img {
+    height: 40vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/Courses-img/1.jpg); */
+
+}
+
+.content1 {
+    position: relative;
+}
+
+.p1 {
+    height: 40vh;
+    width: 100%;
+    position: absolute;
+    left: 0vh;
+    top: 25vh;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.data h1 {
+    color: rgb(55, 54, 54);
+    text-align: center;
+}
+
+.detail {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.im {
+    height: auto;
+    width: 160vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.op {
+    height: 30vh;
+    width: 50vh;
+    /* background-color: aqua; */
+    /* border: 0.2vh solid black; */
+    /* box-shadow:0vh 0vh 1vh 0vh ; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.but{
+    display: flex;
+    justify-content: center ;
+}
+.but button{
+    height: auto;
+    width: auto;
+    padding: 0.7%;
+    border-radius: 1vh;
+    background-color: #02395A;
+    color: white;
+    margin-bottom: 5vh;
+}
+
+/*****************************************************************************/
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    height: 4vh;
+    width: auto;
+    margin: 0.5vh;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 5vh 10vh 5vh 5vh;
+}
+
+.footer li {
+    padding: 0.5vh;
+    display: flex;
+}
+
+.footer h2 {
+    padding: 2vh 0vh;
+}
+
+.last {
+    background-color: rgb(10, 10, 10);
+    height: 8vh;
+    display: flex;
+    padding: 3vh 10vh;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.last h4 {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}

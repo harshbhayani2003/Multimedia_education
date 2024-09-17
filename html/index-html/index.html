@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red And White</title>
+    <link rel="stylesheet" href="/css/index-css/index.css">
+    <link rel="icon" type="" href="/img/index-img/fav-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                counter.innerText = '0';
+                const updateCounter = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText;
+                    const increment = target / 200;
+
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment);
+                        setTimeout(updateCounter, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div>
+            <select name="" id="city">
+                <option value="" hidden>Selected City:Ahmedabad</option>
+                <option value="">Surat</option>
+                <option value="">Rajkot</option>
+                <option value="">Amreli</option>
+                <option value="">Navsari</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="lan">
+                <option value="" hidden>Select Language</option>
+                <option value="">English</option>
+                <option value="">Gujrati</option>
+                <option value="">Hindi</option>
+            </select>
+        </div>
+        <marquee behavior="" direction="left">&#128222; RWA1(Nikol):+91 9979998657 &#128222; RWA2(Navrangpura):+91
+            8808834567 &#128222; RWA3(Manimagar):+91 7600093428 &#128222; RWA4(Bopal):+91 9601999699
+            &#128222; RWA5(Chandkheda):+91 8140055560 &#128222; RWA6(Vastral):+91 7862827707</marquee>
+    </div>
+    <!-- -----------------------------------------navigation-bar------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="nav1 container-fluid">
+
+            <img src="/img/index-img/logo.png" alt="">
+
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <div class="menu">
+                <ul style="padding-left: 0vh; padding-right: 5vh;">
+                    <li> <a href="/html/index-html/index.html">Home</a></li>
+                    <li id="sidestd"> <a href="#">STD 10th & 12th </a>
+                        <div class="sidestd">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li id="sidec"> <a href="#">Career Courses</a>
+                        <div class="sidec">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="sidecoursenav"> <a href="#">Courses</a>
+                        <div class="sidecoursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4">Foundation Courses</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Project_Training.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in Practical Accounnting <br>&
+                                        Taxation</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li id="sidenavaboutas"><a href="#">About Us</a>
+                        <div class="sidenavaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="sidegroup"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="sidegroup">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li id="sidenavstudent"> <a href="#">Student Corner</a>
+                        <div class="sidenavstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li> <a href="/html/Contact us/Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="l">
+                <ul class="l2">
+                    <li class=""><a href="/html/index-html/index.html">Home</a></li>
+                    <li class="" id="std"><a href="" class="">STD 10th & 12th<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="std">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li class="" id="c"><a href="" class="">Career Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="c">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" id="coursenav"><a href="" class="">Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="coursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4"><a href=""></a>Foundation Courses</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in <br>Practical Accounnting &
+                                        Taxation</p></a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="" id="navaboutas"><a href="" class="">About Us<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="navaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="group"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="group">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li class="" id="navstudent"><a href="" class="">Student Corner<i
+                                class="fa-solid fa-angle-down ms-2" style="color: #000205;"></i></a>
+                        <div class="navstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li class=""><a href="/html/Contact us/Contact_us.html" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ----------------------------------------------------First-page----------------------------------------- -->
+    <!-- --------------------------------slider------------------------- -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="/img/index-img/img.1.png" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/index-img/img.2.png" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/index-img/img.3.png" class="d-block w-100 h-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ---------------------------------------counter------------------------------ -->
+    <!-- <div class="carousel-item">
+        <img src="/img/index-img/buinding.png" class="d-block w-100" alt="...">
+    </div> -->
+
+    <div class="con">
+        <ul class="counter-item">
+            <li><i class="fa-regular fa-user" style="color: #fafcff;"></i></li>
+            <span class="counter" data-target="37500">0+</span><span>+</span>
+            <li class="ab">Students Trained</li>
+        </ul>
+        <ul class="counter-item">
+            <li><i class="fa-regular fa-user" style="color: #fafcff;"></i></li>
+            <span class="counter" data-target="50">0+</span><span>+</span>
+            <li class="ab">Approved Courses</li>
+        </ul>
+        <ul class="counter-item">
+            <li><i class="fa-solid fa-suitcase" style="color: #ffffff;"></i></li>
+            <span class="counter" data-target="1500">0+</span><span>+</span>
+            <li class="ab">Companies Tie-Ups</li>
+        </ul>
+        <ul class="counter-item">
+            <li><i class="fa-solid fa-building" style="color: #f0f2f4;"></i></li>
+            <span class="counter" data-target="22">0+</span><span>+</span>
+            <li class="ab">Branches</li>
+        </ul>
+        <ul class="counter-item">
+            <li><img src="/img/index-img/certificate.png" alt=""></li>
+            <span class="counter" data-target="8">0+</span><span>+</span>
+            <li class="ab">Certification</li>
+        </ul>
+    </div>
+    
+    </div>
+    </ul>
+    <!-- ------------------------------------------------------------Course--------------------------------------------- -->
+    <div class="course1">
+        <h1>Pick The Right Course To Build Your Career</h1>
+        <div class="con1">
+            <div><img src="/img/index-img/web.png" alt="">
+                <p>Web Designing</p>
+            </div>
+            <div><img src="/img/index-img/ios.png" alt="">
+                <p>ios Development</p>
+            </div>
+            <div><img src="/img/index-img/web.png" alt="">
+                <p>Web Development</p>
+            </div>
+            <div><img src="/img/index-img/ios.png" alt="">
+                <p>Android Development</p>
+            </div>
+            <div><img src="/img/index-img/animation.png" alt="">
+                <p>Animation</p>
+            </div>
+            <div><img src="/img/index-img/ai & data science.png" alt="">
+                <p>AI & Data Science</p>
+            </div>
+            <div><img src="/img/index-img/game design.png" alt="">
+                <p>Game Design &
+                    Development</p>
+            </div>
+            <div><img src="/img/index-img/web.png" alt="">
+                <p>Full Stack
+                    <br> Development
+                </p>
+            </div>
+            <div><img src="/img/index-img/ui-ux.png" alt="">
+                <p>UI-UX &
+                    <br> Graphics Design
+                </p>
+            </div>
+            <div><img src="/img/index-img/ita-cs.png" alt="">
+                <p>ITA-CS+</p>
+            </div>
+            <div><img src="/img/index-img/poster.png" alt="">
+                <p>Poster-Design</p>
+            </div>
+            <div><img src="/img/index-img/ita-cs.png" alt="">
+                <p>Cyber Security</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------syllabus-------------------------------------------- -->
+    <div class="syllabus">
+        <h1>Our Syllabus Mentor</h1>
+        <div class="box">
+            <div class="sy">
+                <img src="/img/index-img/alok kumar.png" alt="" class="con11">
+                <div class="con12">
+                    <h2>Mr. Alok Kumar</h2>
+                    <p>Director UX @ Myntra <br>
+                        Ex Walmart,Microsoft, Vedantu, Bluestone <br>
+                        Mentor : UI/UX <br> <img src="/img/index-img/in.png" alt=""> <img src="/img/index-img/x.png"
+                            alt=""></p>
+                </div>
+            </div>
+            <div class="sy">
+                <img src="/img/index-img/piyush_jinjala.png" alt="" class="con11">
+                <div class="con12">
+                    <h2>Mr. Piyush Jinjala</h2>
+                    <p>Compositor at The Embassy Vancouver, British
+                        Columbia, Canada <br>
+                        Mentor : Animation <br> <img src="/img/index-img/in.png" alt=""> <img src="/img/index-img/x.png"
+                            alt=""></p>
+                </div>
+            </div>
+            <div class="sy">
+                <img src="/img/index-img/jemishlakhani.png" alt="" class="con11">
+                <div class="con12">
+                    <h2>Mr. Jemish Lakhani</h2>
+                    <p>Founder & CEO of XSQUADS Tech Pvt Ltd<br>
+                        Mentor : Game Design & Development <br><br>
+                        <img src="/img/index-img/in.png" alt=""> <img src="/img/index-img/x.png" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="sy">
+                <img src="/img/index-img/mohit_rajput.JPG" alt="" class="con11">
+                <div class="con12">
+                    <h2>Mr. Mohit Rajput</h2>
+                    <p>Professional Bollywood Movie Poster Designer <br>
+                        Mentor : Graphic Design <br>
+                        <img src="/img/index-img/instagram_1.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <div class="video">
+        <img src="/img/index-img/5-pillers.jfif" alt="">
+        <p class="p">Trust of <span>100% Students</span> and Parents</p>
+        <p>All types of IT & Multimedia technology-oriented knowledge-providing organizations means Red & White,
+            where all the syllabus are developed on a research basis. some of the benefits to study in Red &
+            White...</p>
+        <div class="ul">
+            <ul id="ul1">
+                <li>100% field Oriented Training.</li>
+                <li>Courses according to the international approach.</li>
+                <li>25% Scholarship to an orphan student.</li>
+                <li>"Growth Mindset" Culture</li>
+                <li>Company Visit</li>
+                <li>Multiple Training Center</li>
+            </ul>
+            <ul id="ul2">
+                <li>International collaborations like Google ATC Authorised Testing Center and ISO Approved.</li>
+                <li>A wonderful campus where education is a perfect combination of humour with knowledge and
+                    personality development.</li>
+                <li>Day & Events Celebration</li>
+            </ul>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="link">
+            <iframe src="https://www.youtube.com/embed/mCV6xeJ0kn4?si=zP94NrkprCf71G71" title="YouTube video player"
+                frameborder="0"></iframe>
+        </div>
+        <img src="/img/index-img/mac-screen.png" alt="">
+        <p class="p1">Gujarat #1 Web Design Course Training Institute</p>
+        <p class="p2">Red And White Multimedia Education</p>
+        <p>Red and White Multimedia Education is one of the best Web Design Training Institute in Surat having
+            advance Web design course module. Students who are taking web design classes from us are extremely
+            satisfied. Here is few reason why students prefer us.</p>
+        <div class="ul2">
+            <ul id="ul3">
+                <li>
+                    <div class="arrow">&#11166;</div> Certified Course
+                </li>
+                <li>
+                    <div class="arrow">&#11166;</div> Job Support
+                </li>
+                <li>
+                    <div class="arrow">&#11166;</div> Multiple various events
+                </li>
+                <li>
+                    <div class="arrow">&#11166;</div> Multiple Training center
+                </li>
+            </ul>
+            <ul id="ul4">
+                <li>
+                    <div class="arrow">&#11166;</div> Industry oriented Training
+                </li>
+                <li>
+                    <div class="arrow">&#11166;</div> Multiple Placement partner
+                </li>
+                <li>
+                    <div class="arrow">&#11166;</div> Trusted by more 2000+ Institute
+                </li>
+                <li>
+                    <div class="arrow">&#11166;</div> World Class Infrastructure
+                </li>
+            </ul>
+        </div>
+        <button class="apply" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Apply This Module </button>
+    </div>
+    <div class="place">
+        <h1>We are in</h1>
+        <div id="place">
+            <div id="img">
+                <img src="/img/index-img/surat.png" alt="">
+                <h2>Surat</h2>
+                <p>in 8 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/ahmedabad.png" alt="">
+                <h2>Ahmedabad</h2>
+                <p>in 6 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/rajkot.png" alt="">
+                <h2>Rajkot</h2>
+                <p>in 2 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/amreli.png" alt="">
+                <h2>Amreli</h2>
+                <p>in 1 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/anand.png" alt="">
+                <h2>Anand</h2>
+                <p>in 1 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/bhavnagar.png" alt="">
+                <h2>Bhavnagar</h2>
+                <p>in 1 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/navsari.png" alt="">
+                <h2>Navsari</h2>
+                <p>in 1 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/gandhinagar-1.jpg" alt="">
+                <h2>Gandhinagar</h2>
+                <p>in 1 locations</p>
+            </div>
+            <div id="img">
+                <img src="/img/index-img/bharuch.jpg" alt="">
+                <h2>Bharuch</h2>
+                <p>in 1 locations</p>
+            </div>
+        </div>
+    </div>
+    <div id="career">
+        <h1>Career Courses</h1>
+        <div class="career">
+            <div id="img2">
+                <img src="/img/index-img/gimlogo.png" alt="">
+                <h2>GIM (Graduate In Multimedia)</h2>
+                <p>GIM is a course that develops the inner strength of our children considering their efficiency,
+                    and high potential of work skills and makes them IT industry ready which growing rapidly.</p>
+                <input type="submit" value="Know More">
+            </div>
+            <div id="img2">
+                <img src="/img/index-img/ethical-hacking-icon.png" alt="">
+                <h2>ITA-CS+</h2>
+                <p>The basic 5 factors behind the creation of all facilities i.e. Hardware, Networks, servers, Cloud
+                    & Security which we can deal with it without fear of the place, time, and study of these 5
+                    factors means IT Administrator & Cyber Security Specialist.</p>
+                <input type="submit" value="Know More">
+            </div>
+            <div id="img2">
+                <img src="/img/index-img/full-stack-icon.png" alt="">
+                <h2>Full-Stack Development</h2>
+                <p>A full-stack web developer is a person who can develop both client and server software. In
+                    addition to mastering HTML and CSS, he/she also knows how to Program a browser, Program a
+                    server, and Program a database.</p>
+                <input type="submit" value="Know More">
+            </div>
+        </div>
+    </div>
+    <div id="trending">
+        <h1>Trending Courses</h1>
+        <div class="trending">
+            <div id="img3">
+                <img src="/img/index-img/ai.jpg" alt="">
+                <p>Master in</p>
+                <h3>Ai ML Development</h3>
+                <input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/web-design.jpg" alt="">
+                <p>Master in</p>
+                <h3>Front End Developing</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/web-development.jpg" alt="">
+                <p>Master in</p>
+                <h3>Web Development</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/android-development.jpg" alt="">
+                <p>Master in</p>
+                <h3>Android Development</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/ios.jpg" alt="">
+                <p>Master in</p>
+                <h3>iOS Development</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/graphics-design.jpg" alt="">
+                <p>Master in</p>
+                <h3>Graphics Design</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/game-design.jpg" alt="">
+                <p>Master in</p>
+                <h3>Game Design</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/game-design.jpg" alt="">
+                <p>Master in</p>
+                <h3>Game Development</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/animation.jpg" alt="">
+                <p>Master in</p>
+                <h3>Animation</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/flutter-development.jpg" alt="">
+                <p>Master in</p>
+                <h3>Flutter</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/c-and-c++.jpg" alt="">
+                <p>Advance in</p>
+                <h3>C & C++</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/java.jpg" alt="">
+                <p>Advance in</p>
+                <h3>Java</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/nodejs.png" alt="">
+                <p>Advance in</p>
+                <h3>Node.js</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/trending-ita.jpg" alt="">
+                <h3>ITA-CS+</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/trending-full.jpg" alt="">
+                <h3>Full-stack-development</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/web-design.jpg" alt="">
+                <p>Master in</p>
+                <h3>Web Designing</h3><input type="submit" value="View More">
+            </div>
+            <div id="img3">
+                <img src="/img/index-img/vr.jpg" alt="">
+                <p>Master in</p>
+                <h3>AR/VR Development</h3><input type="submit" value="View More">
+            </div>
+        </div>
+    </div>
+    <div class="world">
+        <div class="text">
+            <h1>World-class infrastructure to develop student careers at the international level.</h1>
+            <p>One of the most trusted and certified Computer training institute for IT course in Surat city. We
+                conduct wide range computers courses and software training course that are highly in demand. Every
+                class that is conducted over here is fully loaded with practical exposure. There multiple
+                information technology institute and classes but what makes us different is knowledge along with
+                certificate.</p>
+        </div>
+        <div class="photo">
+            <img src="/img/index-img/infra_1.jpg" alt="" class="photo1">
+            <img src="/img/index-img/infra_2.jpg" alt="" class="photo2">
+            <img src="/img/index-img/infra_3.jpg" alt="" class="photo3">
+            <img src="/img/index-img/infra_7.jpg" alt="" class="photo4">
+            <img src="/img/index-img/infra_5.jpg" alt="" class="photo5">
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------- -->
+    <p id="review"><span>Valuable Reviews</span> By Students</p>
+    <div class="review1">
+        <div id="carouselExampleIndicators" class="review carousel slide" data-bs-ride="true">
+            <!-- <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="stu">
+                        <div class="stu d-block">
+                            <img src="/img/index-img/Himanshu-Kachhadiya.jpeg" alt="">
+                            <h4>- RWn. Himanshu Kachhadiya<span id="span">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </h4>
+                        </div>
+                        <p id="per">"When I joined GIM after completing Std. 10, I felt that I wanted to be a
+                            developer, but
+                            when I heard about this GIM course and saw it, I felt that I should recognize my inner
+                            strength and
+                            then decide what I am made for. Chosen the Designing Field and today I work as a Team
+                            Leader in a
+                            very reputable company. And 30+ Employees work in my under right now. And since the job
+                            is 8 hours,
+                            I do freelance work comfortably. So behind this success, I would like to thank RNW and
+                            the mentors
+                            there and send a message that every student should recognize their inner strength,
+                            advance their
+                            career, and take up skill education."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="stu">
+                        <div class="stu d-block">
+                            <img src="/img/index-img/janvi.jpg" alt="">
+                            <h4>- RWn. Janvi Vaghani<span id="span">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h4>
+                        </div>
+                        <p id="per">"Red and white always brings a new concept that makes the student more capable
+                            of learning
+                            and all prepared for getting a job. Such as by conducting current market research by
+                            professionals,
+                            organizing field visits that give real-life experience to students, and many more. Thus
+                            after
+                            getting aware of all these facts, I opted to pursue my further study at the red and
+                            white
+                            institute."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="stu">
+                        <div class="stu d-block">
+                            <img src="/img/index-img/meet.jpg" alt="">
+                            <h4>- RWn. Meet Rakholiya<span id="span">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h4>
+                        </div>
+                        <p id="per">"The kind of unique and internationally recognized course structure that helps
+                            students to
+                            keep updated with the latest trends and market requirements really helps students to be
+                            prepared for
+                            not only local but also for the international job market. This is the main reason why I
+                            choose the
+                            red and white group of the institute."</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-white">
+                    <span class="h5 text-danger">Book Free Demo Session</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="bookdemo1">
+                    <input type="text" name="" id="" placeholder="Name" class="txtbox"><br>
+                    <input type="text" name="" id="" placeholder="Eamil" class="txtbox"><br>
+                    <input type="text" name="" id="" placeholder="Phone Number" class="txtbox">
+                    <select name="" id="" class="txtbox">
+                        <option value="">-select Nearest Branch Location-</option>
+                        <option value="">Adajan</option>
+                        <option value="">Vesu</option>
+                        <option value="">A K Road</option>
+                        <option value="">Sarthana</option>
+                        <option value="">Ved Road</option>
+                        <option value="">Youi Chowk</option>
+                        <option value="">Mota Varachha</option>
+                        <option value="">Dindoli</option>
+                    </select>
+                    <div class="captcha">
+                        <input type="checkbox" name="" id=""> <span class="ms-3">I'M Not Robot</span>
+                        <img src="/img/career_courses/captcha.png" alt="" class="captchaimg">
+                    </div>
+                    <button class="btnsubmit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <div class="footer">
+        <ul>
+            <li>
+                <h4>CONTACT US</h4>
+            </li>
+            <li>Our Branches</li>
+            <li>
+                <div class="arrow">&#11166;</div>A K Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Yogi Chowk
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Sarthana
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Mota varachha
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Ved Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Adajan
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Dindoli
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>Vesu
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 7878 444 333
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Franchise Information
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div>info@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/facebook.svg" alt="">
+                <img src="/img/index-img/x.svg" alt="">
+                <img src="/img/index-img/youtube.svg" alt="">
+                <img src="/img/index-img/instagram.svg" alt="">
+                <img src="/img/index-img/linkdin.png" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>TRENDING COURSE</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> GIM
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> ITA-CS+
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> PHP
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Project Training Surat
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Android Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Web Designing Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Full Stack Development Course
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>IMPORTANT PAGES</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Home
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Contact Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> About Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Blog
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Events
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Approval
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Students T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Cities Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Student Login
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>BE RECRUITER</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Register/Login
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Company T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Student T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 93313 13196
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/beti-bachao-beti-padhao-min.png" alt="">\
+                <img src="/img/index-img/digital-india-min.png" alt="">
+                <img src="/img/index-img/Make_In_India-min.png" alt="">
+                <img src="/img/index-img/swachh-india-min.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="last">
+        <p>© Copyright 2024. Red & White Education PVT LTD. All Rights Reserved.</p>
+
+        <h4>Certificate Verification</h4>
+    </div>
+</body>
+
+</html>

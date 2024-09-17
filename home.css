@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: red;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+}
+#city {
+    height: 4vh;
+    border-radius: 0.5vh;
+    background: transparent;
+    color: white;
+    margin-left: 10vh;
+    border: 0.3vh solid white
+}
+#lan{
+    height: 4vh;
+    border-radius: 0.5vh;
+    margin-left: 1vh;
+    background: transparent;
+    color: white;
+    border: 0.3vh solid white
+}
+.header option{
+    color: black;
+}
+.header marquee {
+    display: flex;
+    margin-left: 60vh;
+    color: white;
+    margin-right: 10vh;
+}
+/* -------------------------Navigation-bar-------------------------------- */
+.nav1 {
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    height: 10vh;
+    position: sticky;
+    top: 0vh;
+    /* z-index: 999; */
+}
+
+.nav1 ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    margin-right: 10vh;
+}
+
+.nav1 a {
+    margin-left: 5vh;
+    color: black;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav1 img {
+    height: 8vh;
+    width: 25vh;
+    margin-left: 10vh;
+}
+.career h3{
+    padding-bottom: 1vh;
+    border-bottom: 0.2vh dashed black;
+}
+.std{
+    display: none;
+    z-index: 1;
+    position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.kp:hover+.std{
+    display: block;
+}
+.img {
+    height: 80vh;
+    width: auto;
+    background: black;
+    animation-name: img;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}

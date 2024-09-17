@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS</title>
+    <link rel="stylesheet" href="/css/Courses-css/ios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <select name="" id="city">
+                <option value="" hidden>Selected City:Ahmedabad</option>
+                <option value="">Surat</option>
+                <option value="">Rajkot</option>
+                <option value="">Amreli</option>
+                <option value="">Navsari</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="lan">
+                <option value="" hidden>Select Language</option>
+                <option value="">English</option>
+                <option value="">Gujrati</option>
+                <option value="">Hindi</option>
+            </select>
+        </div>
+        <marquee behavior="" direction="left">&#128222; RWA1(Nikol):+91 9979998657 &#128222; RWA2(Navrangpura):+91
+            8808834567 &#128222; RWA3(Manimagar):+91 7600093428 &#128222; RWA4(Bopal):+91 9601999699
+            &#128222; RWA5(Chandkheda):+91 8140055560 &#128222; RWA6(Vastral):+91 7862827707</marquee>
+    </div>
+    <!-- -----------------------------------------navigation-bar------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="nav1 container-fluid">
+
+            <img src="/img/index-img/logo.png" alt="">
+
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <div class="menu">
+                <ul style="padding-left: 0vh; padding-right: 5vh;">
+                    <li> <a href="/html/index-html/index.html">Home</a></li>
+                    <li id="sidestd"> <a href="#">STD 10th & 12th </a>
+                        <div class="sidestd">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li id="sidec"> <a href="#">Career Courses</a>
+                        <div class="sidec">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="sidecoursenav"> <a href="#">Courses</a>
+                        <div class="sidecoursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4">Foundation Courses</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Project_Training.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in Practical Accounnting <br>&
+                                        Taxation</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li id="sidenavaboutas"><a href="#">About Us</a>
+                        <div class="sidenavaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="sidegroup"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="sidegroup">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li id="sidenavstudent"> <a href="#">Student Corner</a>
+                        <div class="sidenavstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li> <a href="/html/Contact us/Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="l">
+                <ul class="l10">
+                    <li class=""><a href="/html/index-html/index.html">Home</a></li>
+                    <li class="" id="std"><a href="" class="">STD 10th & 12th<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="std">
+                            <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                            <p><a href="/html/std10&12-html/ita.html">ITA-CS+</a></p>
+                            <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2 year</a></p>
+                        </div>
+                    </li>
+
+                    <li class="" id="c"><a href="" class="">Career Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="c">
+                            <div>
+                                <p class="fw-bold ms-4">Identification</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/std10&12-html/gim.html">GIM (Graduate In Multimedia)</a></p>
+                                <p class="fw-bold ms-4">Desining</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Master_in_Graphic.html">Master In Graphic Design</a>
+                                </p>
+                                <p><a href="/html/career_courses/UI-UX_Graphic.html">UI/UX & Graphic design Course</a>
+                                </p>
+                                <p><a href="/html/career_courses/Game_Design.html">Master in Game design</a></p>
+                                <p class="fw-bold ms-4">Visualization</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Animation_Master.html">Master in Animation</a></p>
+                                <p><a href="/html/std10&12-html/animation.html">Animation & VFX 2year</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Coding & Programming</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/career_courses/Web_Design_Master.html">Master in Web Designing</a></p>
+                                <p><a href="/html/career_courses/Fornt_End_Devlopment_Master.html">Master in Front End
+                                        Development</a></p>
+                                <p><a href="/html/career_courses/Web_Devlopment_Master.html">Master in Web
+                                        Development</a></p>
+                                <p><a href="/html/Courses-html/android.html">Master in Android Development</a></p>
+                                <p><a href="/html/Courses-html/ios.html">Master in iOS Development</a></p>
+                                <p><a href="/html/career_courses/Game_Development.html">Master in Game Development</a>
+                                </p>
+                                <p><a href="/html/Courses-html/Flutter.html">Master in Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Advance in Python</a></p>
+                                <p><a href="/html/career_courses/Full-Stack_Master.html">Full Stack Development</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" id="coursenav"><a href="" class="">Courses <i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="coursenav">
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Coding &
+                                        Programming</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/React_Native.html">React Native</a></p>
+                                <p><a href="/html/Courses-html/React_Js.html">React Js</a></p>
+                                <p><a href="/html/Courses-html/Node_Js.html">Node js</a></p>
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/Unity_Script.html">Unity C# Script</a></p>
+                                <p><a href="/html/Courses-html/Angular_JS.html">Angular Js</a></p>
+                                <p><a href="/html/Courses-html/Laravel.html">Laravel</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Graphic_Design.html">Graphic
+                                        Desing</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Photoshop.html">Photoshop</a></p>
+                                <p><a href="/html/Courses-html/Illustrator.html">lllustrator</a></p>
+                                <p><a href="/html/Courses-html/Figma.html">Figma</a></p>
+                                <p><a href="/html/Courses-html/Corel_Draw.html">Corel Draw</a></p>
+                                <p><a href="/html/Courses-html/After_Effects.html">After Effects</a></p>
+                                <p><a href="/html/Courses-html/Poster_Designing.html">Poster Designing</a></p>
+                                <p class="fw-bold ms-4">Video Editing</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Video_Editing.html">Video Editing</a></p>
+                                <p><a href="/html/Courses-html/DaVinci_Resolve.html">Davinci Resolve Course</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Short_term.html">Short Term</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Microsoft_Office.html">Microsoft Office</a></p>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Fronted_Coding.html">Fornted
+                                        Coding</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Bootstrap.html">Bootstrap</a></p>
+                                <p><a href="/html/Courses-html/HTML5_CSS3.html">HTML5 CSS3</a></p>
+                                <p class="fw-bold ms-4"><a href=""></a>Foundation Courses</p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/C_C++.html">C & C++</a></p>
+                                <p><a
+                                        href="/html/Courses-html/Software_Development.html">Software<br>DevelopmentFoundation</a>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4"><a href="/html/Courses-html/Programming.html">Project
+                                        training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/PHP.html">PHP</a></p>
+                                <p><a href="/html/Courses-html/android.html">Android Training</a></p>
+                                <p><a href="/html/Courses-html/ios.html">iOS</a></p>
+                                <p><a href="/html/Courses-html/Java.html">Java</a></p>
+                                <p><a href="/html/Courses-html/Flutter.html">Flutter</a></p>
+                                <p><a href="/html/Courses-html/Python.html">Python</a></p>
+                            </div>
+                            <div>
+                                <p class="fw-bold ms-4">Corporate Training</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Public_Speaking.html">Public Speaking Course</a></p>
+                                <p class="fw-bold ms-4">Next-GEN technologies</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Data_Science.html">Data Science & AI-ML Python</a></p>
+                                <p><a href="/html/Courses-html/AR_VR.html">AR-VR</a></p>
+                                <p class="fw-bold ms-4">Accounting</a></p>
+                                <hr class="ms-4">
+                                <p><a href="/html/Courses-html/Diploma.html">Diploma in <br>Practical Accounnting &
+                                        Taxation</p></a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="" id="navaboutas"><a href="" class="">About Us<i class="fa-solid fa-angle-down ms-2"
+                                style="color: #000205;"></i></a>
+                        <div class="navaboutas">
+                            <ul style="width: 30vh; padding-right:5.3vh; padding-left: 0vh; margin-bottom:2vh ;">
+                                <li id="group"><a href="#">Group of institutes<i class="fa-solid fa-angle-down ms-2"
+                                            style="color: #000205;"></i></a>
+                                    <div class="group">
+                                        <p> <a href="https://www.design-institute.in/">RNW Designing institute</a></p>
+                                        <p> <a href="https://rnwinternational.com/">RNW International</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="https://rnwmultimedia.keka.com/careers">Career With Us</a></p>
+                            <p><a href="/html/About-Us-html/authorised.html">Affiliation / Authorised</a></p>
+                            <p><a href="/html/About-Us-html/PreesNote.html">Press Notes</a></p>
+                        </div>
+                    </li>
+                    <li class="" id="navstudent"><a href="" class="">Student Corner<i
+                                class="fa-solid fa-angle-down ms-2" style="color: #000205;"></i></a>
+                        <div class="navstudent">
+                            <p><a href="/html/Student-Corner-html/Apply Job.html">Apply job</a></p>
+                            <p><a href="/html/Student-Corner-html/Placement.html">Placement</a></p>
+                            <p><a href="/html/Student-Corner-html/Grivence.html">Grievance</a></p>
+                            <p><a href="/html/Student-Corner-html/WhyChooseRNW.html">Why I chooses RNW</a></p>
+                            <p><a href="/html/Student-Corner-html/PlacementPartner.html">Placement Partners</a></p>
+                            <p><a href="/html/Student-Corner-html/Student_Work.html">Student Works</a></p>
+                        </div>
+                    </li>
+                    <li class=""><a href="/html/Contact us/Contact_us.html" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------------->
+    <div class="content1">
+        <img src="/img/Courses-img/4.jpg" alt="">
+    </div>
+    <div class="p1">
+        <p>
+        <h1>ios development course in surat</h1>
+        </p>
+        <p>Home / ios development course in surat</p>
+    </div>
+    <div class="con">
+        <div class="detail">
+            <!-- <p class="par1"><span>About</span>Java Course</p> -->
+            <h1><span>About</span> iOS Course</h1>
+            <p>iOS application development makes mobile applications for Apple hardware, including iPhone, iPad and iPod
+                Touch. The software is written in the Swift or Objective-C and then deployed to the App Store for users
+                to download. Rednwhite Institute is the best <a href="">Java Training institute in Surat.</a></p>
+            <p class="l1">Course Duration <span> 12 Months </span></p>
+            <p class="l1">Daily Time <span> 2 Hours </span></p>
+
+            <h3>Included In This Course</h3>
+            <p><span> &#10003 </span>Job Support</p>
+            <p><span> &#10003 </span>Rich Learning Content</p>
+            <p><span> &#10003 </span>Taught by Experienced Prof.</p>
+            <p><span> &#10003 </span>Industry Oriented Projects</p>
+
+            <div class="l2">
+                <p>Course Modulers</p>
+            </div>
+            <div class="but">
+                <button>Programming Foundation</button>
+                <button>Core iOS (Swift)</button>
+                <button>Advanced iOS (Swift)</button>
+                <button>Aso</button>
+            </div>
+            <p class="l3"><span>Programming Foundation</span></p>
+            <div class="l6">
+                <li>&#128905 <span> C Language </span></li>
+                <li>&#128900 Intro. of C.</li>
+                <li>&#128900 History & Structure of C.</li>
+                <li>&#128900 Compile and Run Command.</li>
+                <li>&#128900 Variable & Data Type.</li>
+                <li>&#128900 Constant & Operator</li>
+                <li>&#128900 Decision Making & Control Statement.</li>
+                <li>&#128900 Local & Global Variable.</li>
+                <li>&#128900 Loops (While, Do While & For)</li>
+                <li>&#128900 Array (1D & 2D And Multi-Dimensional)</li>
+                <li>&#128900 Strings</li>
+                <li>&#128900 Functions</li>
+
+                <li>&#128905 <span> C++ Language </span></li>
+                <li>&#128900 Intro. of OOP</li>
+                <li>&#128900 Declaration of Variable and Data Types.</li>
+                <li>&#128900 C++ Character Function.</li>
+                <li>&#128900 Control Statement and Array.</li>
+                <li>&#128900 Info. of Class and Object.</li>
+                <li>&#128900 Inheritance & Polymorphism.</li>
+                <li>&#128900 Data Hiding & Encapsulation.</li>
+                <li>&#128900 Overloading & Reusability.</li>
+                <li>&#128900 Constructor & Destructor.</li>
+            </div>
+            <div class="l5">
+                <li><span> LANGUAGES TO LEARN: </span></li>
+                <li>C, C++</li>
+                <li><span> TIME DURATION: </span></li>
+                <li>3 Months</li>
+            </div>
+
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>Core iOS (Swift)</span></p>
+
+            <div class="l6">
+                <li>&#128905<span> Core Swift </span></li>
+                <li>&#128900 Basic Core Concepts</li>
+                <li>&#128900 Overview of Objective C</li>
+                <li>&#128900 Basic Information about iOS</li>
+                <li>&#128900 Introduction of XCode</li>
+                <li>&#128900 Basic Concepts with playground</li>
+                <li>&#128900 IB Outlets & IB Actions</li>
+                <li>&#128900 Storyboard & XIB</li>
+                <li>&#128900 Delegate & Protocol</li>
+                <li>&#128900 Text field & text view and Delegate methods of them</li>
+                <li>&#128900 Ui Controls</li>
+                <li>&#128900 Api Calling</li>
+                <li>&#128900 Constraints</li>
+                <li>&#128900 Dynamic UI Controls</li>
+                <li>&#128900 Cocoa Pods</li>
+                <li>&#128900 Local Database</li>
+                <li>&#128900 Core Database</li>
+                <li>&#128900 Tab Bar</li>
+                <li>&#128900 App Uploading</li>
+            </div>
+
+            <div class="ll4">
+                <li><span> LANGUAGES TO LEARN: </span></li>
+                <li>Core Swift</li>
+                <li><span> TIME DURATION: </span></li>
+                <li>3 Months</li>
+                <li><span> PROJECTS : </span></li>
+                <li>1. Brain Games 2.Card Games 3. Expense Manager App. 4. Quiz App 5.EMI Calculator 6.Health App 7.RTO
+                    Exam app. 8. Contact Duplicate App 9. Tic-Tac-Toe Game 10.Truth & Dare Game 11.QR Code & Barcode
+                    Scanner & Generator app.</li>
+            </div>
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>Advanced iOS (Swift)</span></p>
+
+            <div class="l6">
+                <li>&#128905<span> Advance Swift </span></li>
+                <li>&#128900 Models</li>
+                <li>&#128900 Coding Intrusions as a Developer</li>
+                <li>&#128900 MVC Architecture</li>
+                <li>&#128900 MVVM Architecture</li>
+                <li>&#128900 Map, Filter, and Reduce</li>
+                <li>&#128900 SideBar</li>
+                <li>&#128900 Advance API Calling</li>
+                <li>&#128900 Push Notifications</li>
+                <li>&#128900 Firebase Integrations</li>
+                <li>&#128900 Project Architecture</li>
+                <li>&#128900 Dropdown, Pop-Ups</li>
+                <li>&#128900 Use Controls in Advance</li>
+                <li>&#128900 App Group</li>
+                <li>&#128900 Thread Controlling</li>
+
+                <li>&#128905 <span> UI / UX Design </span></li>
+                <li>&#128900 Figma</li>
+                <li>&#128900 Introduction of Figma</li>
+                <li>&#128900 Select, Rectangle, Ellipse, Line, Polygon & Text tools.</li>
+                <li>&#128900 Pen Tool, Artboard Tool, Zoom Tool Appearance Option.</li>
+                <li>&#128900 Clipping Amsk, Repeat Grid, Scrolling Option Working with Assets and Layer, Grouping and
+                    Ungrouping</li>
+                <li>&#128900 Crautirg Cloud Acceurt & Introducticn of Prototype Preview.</li>
+                <li>&#128900 Using Figma Kimts & Plugins.</li>
+                <li>&#128900 Sharing your Figma Designs.</li>
+                <li>&#128900 Viewing Design on Mobile.</li>
+            </div>
+
+            <div class="ll4">
+                <li><span> LANGUAGES TO LEARN: </span></li>
+                <li>Advance Swift</li>
+                <li><span> TIME DURATION: </span></li>
+                <li>3 Months</li>
+                <li><span> PROJECTS : </span></li>
+                <li>1. Multi-vendor app 2.Queue Management app 3.Video Streaming app 4. Weather App 5.Notes App
+                    6.MoodTracker app 7.Chart app 8.Cab Booking app 9. Survey apps 10.AR apps</li>
+            </div>
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>ASO</span></p>
+
+            <div class="l6">
+                <li>&#128905<span> App Store Optimization </span></li>
+                <li>&#128900 Introduction of ASO</li>
+                <li>&#128900 Keyword Optimization.</li>
+                <li>&#128900 Keyword Planner.</li>
+                <li>&#128900 ASO tool of Apple</li>
+                <li>&#128900 Google Ads.</li>
+                <li>&#128900 Google Analytics</li>
+                <li>&#128900 Google Ads with XCode</li>
+                <li>&#128900 Onpage Aso.</li>
+                <li>&#128900 FB, Instagram & Linkedin</li>
+                <li>&#128900 App Name & Sub Title</li>
+                <li>&#128900 Screenshots</li>
+                <li>&#128900 App Localization</li>
+                <li>&#128900 Upwork & Freelancer & Anglist</li>
+            </div>
+
+            <div class="ll4">
+                <li><span> TIME DURATION: </span></li>
+                <li>3 Months</li><br>
+                <li><span> PROJECTS : </span></li>
+                <li>1. Entry-Level Basic Application 2.Basic one Advanced-Level Application 3. Upload app to App Store
+                    4. Application Marketing With Google Ad Mob</li>
+            </div>
+            <div class="but1">
+                <button>Apply For This Module</button>
+            </div>
+
+            <p class="l3"><span>iOS Training Course Overview</span></p>
+            <div class="para1">
+                <p><span>We Are Only One ATC Authorised Training Provider In Gujarat.</span></p>
+                <p>We offer job Support after completing the course.</p>
+                <p>In Gujarat, RNW is the only IOS Training Provider so that students can benefit from the latest
+                    curriculum in IOS technology.</p>
+                <p>This course is designed to meet all levels of student requirements. Our IOS trainer understands the
+                    actual need for fresher students to be professional.</p>
+                <p>Our trainer will ensure a complete understanding of every concept included in the course because of
+                    listening and solving student's doubts.
+                </p>
+
+                <p><span>Best iOs Training Institute In Surat</span></p>
+                <p>RNW technologies mainly focus on the present scope of the IOS app and real-time requirements.
+                    Each section of the module will boost your programming skills. Real-time projects will be conducted,
+                    like creating many real-world applications. On successful completion of the course, you will get a
+                    job. On successful completion of the course, you will get a job.</p>
+
+                <p><span>What Are The requirements For iOS Development Course?</span></p>
+                <p>Basic knowledge of computers is good to start learning, and you don't need any degree or diploma to
+                    secure a job. Nowadays, companies are not specifically asking for a degree or certificate.</p>
+
+                <p><span>Other Benefits Of Learning iOS Development Are:</span></p>
+                <p>Higher demands for Jobs :<br>Web developers' salary is high. In a Glassdoor report, the average
+                    salary of a web developer is $93,402 per year, which makes it one of the most attractive jobs in the
+                    market.</p>
+
+                <p>Cross-Platform Compatibility<br>The mobile app industry is growing regarding the vast user base,
+                    symbolising this system's influence.</p>
+
+                <p>Significant for brand building<br>
+                    Without the aid of a website designer and a developer, no brand can grow. The simple way is to use
+                    these websites with technological advancement, which makes it possible for more people to know about
+                    various brands. For every business searching for a web designer or developer with talents, you must
+                    take <a href="">web design course in Ahmedabad.</a></p>
+
+                <p>Flexibility<br>Being a web developer IOS has no developmental conditions like the iOS platform, while
+                    Android is highly flexible to go after many developmental capabilities.</p>
+
+                <p>High demand for iOS developers<br>Software companies are looking for mobile apps, and software firms
+                    are turning to mobile app development. This growing situation has increased the demand for aspect
+                    iOS developers.</p>
+
+                <p>Easy Accessibility<br>A developer can use the IOS open source platform anywhere or anytime through a
+                    system, device and internet connection.</p>
+
+                <p>High Earning Potential<br>Developers can develop an IOS app for a business company with a software
+                    firm or work from home by creating mobile applications.</p>
+            </div>
+
+            <div class="but1">
+                <button>Submit Your Information</button>
+            </div>
+
+            <div class="l2">
+                <p>FAQ</p>
+            </div>
+
+            <p class="l3"><span>Who can join the iOS course?</span></p>
+
+            <div class="l6">
+                <li>&#128900 Undergraduate or graduate in the computer field.</li>
+                <li>&#128900 Pass 12th Mathematics Interested Students.</li>
+                <li>&#128900 One person is employed in another area.</li>
+                <li>&#128900 Housewife, Businessman.</li>
+                <li>&#128900 A person who wants to turn a job and his field of business.</li>
+            </div>
+
+            <p class="l3"><span>Why should I learn iOS?</span></p>
+
+            <div class="l6">
+                <li>&#128900 It is straightforward to learn.</li>
+                <li>&#128900 In the world's mobile market, 32% of people own iPhones (1 billion people).</li>
+                <li>&#128900 Getting a job in any corner of the world is easy.</li>
+                <li>&#128900 Being open source (free software)</li>
+            </div>
+
+            <p class="l3"><span>What after the iOS course?</span></p>
+
+            <div class="l6">
+                <li>&#128900 Business can be started with 0 investment.</li>
+                <li>&#128900 Freelance work can be done.</li>
+                <li>&#128900 Part-time work can be obtained with one's occupation or job.</li>
+                <li>&#128900 To give a digital platform to your company.</li>
+                <li class="ll6">&#128900 Area but massive and continuous development.</li>
+            </div>
+
+        </div>
+
+        <!--------------------------------------------------------->
+        <div class="data">
+            <img src="/img/Courses-img/ios(1).jpg" alt="">
+            <div class="f1">
+                <p class="f1p1">Book a Free Demo Session</p>
+                <input type="text" placeholder="Name" class="drop">
+                <input type="text" placeholder="Email" class="drop">
+                <input type="text" placeholder="Phone Number" class="drop">
+                <select name="" id="" class="drop">
+                    <option value="">-Select Nearest Branch Location-</option>
+                    <option value="">Adajan</option>
+                    <option value="">Vesu</option>
+                    <option value="">A K Road</option>
+                    <option value="">Sarthana</option>
+                    <option value="">Ved Road</option>
+                    <option value="">Yogi Chowk</option>
+                    <option value="">Mota Varachha</option>
+                    <option value="">Dindoli</option>
+                </select>
+                <div class="captcha">
+                    <input type="checkbox">
+                    <p>I'M Not Robot</p>
+                    <img src="/img/Courses-img/captcha.webp" alt="">
+                </div>
+                <button class="but2">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!--*****************************************************************-->
+
+    <div class="footer">
+        <ul>
+            <li>
+                <h4>CONTACT US</h4>
+            </li>
+            <li>Our Branches</li>
+            <li>
+                <div class="arrow">&#11166;</div> A K Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Yogi Chowk
+            </li>
+            <li>
+                <div class="arrow">&#11166; </div> Sarthana
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Mota varachha
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Ved Road
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Adajan
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Dindoli
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Vesu
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 7878 444 333
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Franchise Information
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> info@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/facebook.svg" alt="">
+                <img src="/img/index-img/x.svg" alt="">
+                <img src="/img/index-img/youtube.svg" alt="">
+                <img src="/img/index-img/instagram.svg" alt="">
+                <img src="/img/index-img/linkdin.jpg" alt="">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>TRENDING COURSE</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> GIM
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> ITA-CS+
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> PHP
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Project Training Surat
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Android Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Web Designing Training Course
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Full Stack Development Course
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>IMPORTANT PAGES</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Home
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Contact Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> About Us
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Blog
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Events
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Approval
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Students T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Cities Sitemap
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Student Login
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>BE RECRUITER</h4>
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Register/Login
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Company T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement Student T&C
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> +91 93313 13196
+            </li>
+            <li>
+                <div class="arrow">&#11166;</div> Placement@rnwmultimedia.com
+            </li>
+            <li><img src="/img/index-img/beti-bachao-beti-padhao-min.png" alt="">
+                <img src="/img/index-img/digital-india-min.png" alt="">
+                <img src="/img/index-img/Make_In_India-min.png" alt="">
+                <img src="/img/index-img/swachh-india-min.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="last">
+        <p>© Copyright 2024. Red & White Education PVT LTD. All Rights Reserved.</p>
+
+        <h4>Certificate Verification</h4>
+    </div>
+</body>
+
+</html>

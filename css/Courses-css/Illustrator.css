@@ -1,0 +1,627 @@
+::selection {
+    color: white;
+    background-color: gray;
+}
+
+* {
+    margin: 0vh;
+    padding: 0vh;
+}
+
+body {
+    background-color: rgba(222, 220, 220, 0.603);
+}
+
+.header {
+    background-color: red;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#city {
+    height: 4vh;
+    border-radius: 0.5vh;
+    background: transparent;
+    color: white;
+    margin-left: 10vh;
+    border: 0.3vh solid white
+}
+
+#lan {
+    height: 4vh;
+    border-radius: 0.5vh;
+    margin-left: 1vh;
+    background: transparent;
+    color: white;
+    border: 0.3vh solid white
+}
+
+.header option {
+    color: black;
+}
+
+.header marquee {
+    display: flex;
+    margin-left: 60vh;
+    color: white;
+    margin-right: 10vh;
+}
+
+/* -------------------------Navigation-bar-------------------------------- */
+.hamburger {
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #efeaea;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+    display: none;
+}
+
+.menu a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* .menu a:hover {
+    background-color: #575757;
+} */
+.content {
+    padding: 60px 20px;
+    margin-top: 60px;
+    /* Space for the fixed header */
+}
+
+#menu-toggle:checked+.menu {
+    width: 250px;
+    display: block;
+}
+
+.std {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.c {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+    /* display: flex; */
+}
+
+.coursenav {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.navaboutas {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.group {
+    display: none;
+    z-index: 40;
+    /* padding: 5vh 0vh 5vh 0vh; */
+}
+
+.navstudent {
+    display: none;
+    z-index: 40;
+    padding: 5vh 5vh 5vh 0vh;
+}
+
+.sidestd {
+    display: none;
+    z-index: 40;
+}
+
+.sidec {
+    display: none;
+    z-index: 40;
+}
+
+.sidecoursenav {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavaboutas {
+    display: none;
+    z-index: 40;
+}
+
+.sidenavstudent {
+    display: none;
+    z-index: 40;
+}
+
+.sidegroup {
+    display: none;
+    z-index: 41;
+}
+
+/* -----------------------------------------------------------navigation-bar------------------------------------------------- */
+.nav1 {
+    display: flex;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+}
+
+.l10 {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    padding-right: 20vh;
+}
+
+.nav1 a {
+    margin-left: 5vh;
+    color: black;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav1 img {
+    height: 8vh;
+    width: 25vh;
+    margin-left: 10vh;
+}
+
+.career h3 {
+    padding-bottom: 1vh;
+    border-bottom: 0.2vh dashed black;
+}
+
+.img {
+    height: 80vh;
+    width: auto;
+    background: black;
+    animation-name: img;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.l ul li a:hover {
+    color: red;
+}
+
+#std:hover .std {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 100vh;
+    background-color: white;
+}
+
+#c:hover .c {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    display: flex;
+}
+
+#coursenav:hover .coursenav {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 10vh;
+    background-color: white;
+    display: flex;
+}
+
+#navaboutas:hover .navaboutas {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 40vh;
+    background-color: white;
+    /* width: 50vh; */
+    /* border: 1px solid black; */
+}
+
+#group:hover .group {
+    display: block;
+    position: absolute;
+    width: 40vh;
+    top: 6vh;
+    right: 35vh;
+    background-color: white;
+}
+
+#navstudent:hover .navstudent {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    right: 30vh;
+    background-color: white;
+}
+
+#sidestd:hover .sidestd {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    /* overflow-y: scroll; */
+    background-color: white;
+}
+
+#sidec:hover .sidec {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidecoursenav:hover .sidecoursenav {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavaboutas:hover .sidenavaboutas {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidenavstudent:hover .sidenavstudent {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#sidegroup:hover .sidegroup {
+    display: block;
+    height: 30vh;
+    width: 36vh;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.menu>ul {
+    list-style: none;
+}
+
+.menu a {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+@media screen and (max-width :768px) {
+    .l {
+        display: none;
+    }
+
+    /* .course1 {
+        display: block;
+    } */
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/**********************************************************************/
+.content1 img {
+    height: 40vh;
+    width: 100%;
+}
+
+.content1 {
+    position: relative;
+}
+
+.p1 {
+    height: 40vh;
+    width: 100%;
+    position: absolute;
+    left: 0vh;
+    top: 25vh;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.con {
+    height: 100%;
+    width: 100%;
+    margin: 5vh 0vh 5vh 0vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.detail {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(222, 220, 220, 0.277);
+    border-radius: 1vh;
+    padding: 0vh 2vh 3vh 3vh;
+    /* border: 0.2vh solid black; */
+}
+
+
+
+.detail h1 {
+    margin: 2vh 0vh 2vh 0vh;
+    color: red;
+}
+
+span {
+    color: black;
+
+}
+
+.detail a {
+    text-decoration: none;
+}
+
+.detail p {
+    color: gray;
+}
+
+.l3 {
+    height: 5vh;
+    width: 100%;
+    border: none;
+    background-color: rgba(137, 43, 226, 0.24);
+    border-radius: 0.7vh;
+    font-weight: bold;
+    margin-top: 2vh;
+    padding-left: 1vh;
+    display: inline flex;
+    align-items: center;
+}
+
+.but1 {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    animation: zoom 2s ease infinite;
+}
+
+.but1 button {
+    height: auto;
+    width: auto;
+    padding: 0.7%;
+    border-radius: 1vh;
+    background-color: #02395A;
+    color: white;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.l6 li {
+    margin-top: 2vh;
+    list-style: none;
+    color: gray;
+}
+
+.p4 {
+    height: 20vh;
+    width: 70%;
+    border-radius: 1vh;
+    margin: 4vh 0vh 5vh 15%;
+    background-color: rgba(163, 163, 163, 0.223);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.p4 p {
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+}
+
+.p4 button {
+    height: 5vh;
+    width: 15vh;
+    font-size: 2.5vh;
+    border: none;
+    border-radius: 1vh;
+    background-color: white;
+}
+
+.para1 p {
+    padding-top: 2vh;
+}
+
+/*******************************************************/
+.data img {
+    height: 35vh;
+    width: 60vh;
+    border-radius: 1vh;
+}
+
+.f1 {
+    height: 70vh;
+    width: 55vh;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    padding: 3% 0 0 3%;
+    position: sticky;
+    top: 15vh;
+    background-color: rgba(222, 220, 220, 0.277);
+}
+
+.f1p1 {
+    color: red;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.drop {
+    height: 6vh;
+    width: 50.3vh;
+    border: 0.2vh solid rgba(128, 128, 128, 0.225);
+    font-size: 2vh;
+    margin-top: 3vh;
+    border-radius: 1vh;
+    background-color: rgba(240, 248, 255, 0.599);
+}
+
+input[type=text]:focus {
+    border: 0.2vh solid red;
+    outline: none;
+}
+
+.captcha {
+    height: 10vh;
+    width: 35vh;
+    border-radius: 1vh;
+    border: 0.2vh solid rgba(128, 128, 128, 0.863);
+    margin: 3vh 0vh 0vh 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.captcha img {
+    height: 6vh;
+    width: 6vh;
+    margin-left: 20%;
+}
+
+.captcha input {
+    height: 3vh;
+    width: 3vh;
+}
+
+.but2 {
+    height: 6vh;
+    width: 50.3vh;
+    border: 0.2vh solid rgba(128, 128, 128, 0.225);
+    font-size: 2vh;
+    margin-top: 3vh;
+    border-radius: 1vh;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.but2:hover {
+    transform: scaley(1.1);
+}
+
+.f1 p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .con {
+        display: block;
+        width: auto;
+    }
+
+    .detail {
+        width: auto;
+    }
+
+    .data,
+    .f1,
+    .data img {
+        width: auto;
+    }
+
+    .drop,
+    .but2 {
+        width: 90%;
+    }
+
+    .data>img {
+        width: 100%;
+    }
+}
+
+/*****************************************************************************/
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    height: 4vh;
+    width: auto;
+    margin: 0.5vh;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 5vh 10vh 5vh 5vh;
+}
+
+.footer li {
+    padding: 0.5vh;
+    display: flex;
+}
+
+.footer h2 {
+    padding: 2vh 0vh;
+}
+
+.last {
+    background-color: rgb(10, 10, 10);
+    height: 8vh;
+    display: flex;
+    padding: 3vh 10vh;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.last h4 {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
